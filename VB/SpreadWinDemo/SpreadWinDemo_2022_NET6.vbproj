@@ -1,0 +1,89 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <StartupObject>Sub Main</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsForms</MyType>
+    <AssemblyName>SpreadWinDemo</AssemblyName>
+    <RootNamespace>SpreadWinDemo</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="images\AutoFill.png" />
+    <None Remove="images\history.gif" />
+    <None Remove="images\music.gif" />
+    <None Remove="images\science.gif" />
+    <None Remove="images\TouchMenuItemDownArrow.png" />
+    <None Remove="SampleData\data.xml" />
+    <None Remove="SampleData\data30.xml" />
+    <None Remove="SampleData\data50.xml" />
+    <None Remove="SampleData\databind.xml" />
+    <None Remove="SampleData\dataconditionalformat.xml" />
+    <None Remove="SampleData\dataexcelfilter.xml" />
+    <None Remove="SampleData\datanum1.xml" />
+    <None Remove="SampleData\datanum2.xml" />
+    <None Remove="SampleData\datanum3.xml" />
+    <None Remove="SampleData\datanum4.xml" />
+    <None Remove="SampleData\datapln.xml" />
+    <None Remove="SampleData\datares.xml" />
+    <None Remove="SampleData\datascroll.xml" />
+    <None Remove="SampleData\Holiday.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="images\AutoFill.png" />
+    <EmbeddedResource Include="images\history.gif" />
+    <EmbeddedResource Include="images\music.gif" />
+    <EmbeddedResource Include="images\science.gif" />
+    <EmbeddedResource Include="images\TouchMenuItemDownArrow.png" />
+    <EmbeddedResource Include="SampleData\data.xml" />
+    <EmbeddedResource Include="SampleData\data30.xml" />
+    <EmbeddedResource Include="SampleData\data50.xml" />
+    <EmbeddedResource Include="SampleData\databind.xml" />
+    <EmbeddedResource Include="SampleData\dataconditionalformat.xml" />
+    <EmbeddedResource Include="SampleData\dataexcelfilter.xml" />
+    <EmbeddedResource Include="SampleData\datanum1.xml" />
+    <EmbeddedResource Include="SampleData\datanum2.xml" />
+    <EmbeddedResource Include="SampleData\datanum3.xml" />
+    <EmbeddedResource Include="SampleData\datanum4.xml" />
+    <EmbeddedResource Include="SampleData\datapln.xml" />
+    <EmbeddedResource Include="SampleData\datares.xml" />
+    <EmbeddedResource Include="SampleData\datascroll.xml" />
+    <EmbeddedResource Include="SampleData\Holiday.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GrapeCity.Spread.WinForms.ja" Version="15.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="My Project\Application.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+    </None>
+  </ItemGroup>
+
+</Project>

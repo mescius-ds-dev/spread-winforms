@@ -1,0 +1,1722 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85BD6E49-B6EA-4329-97DD-F4839924C0A2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SpreadWinDemo.My.MyApplication</StartupObject>
+    <RootNamespace>SpreadWinDemo</RootNamespace>
+    <AssemblyName>SpreadWinDemo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.CalcEngine, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Excel, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.PDF, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Win, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Win.Chart, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Win.SpreadJ, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.CalcEngine, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="GrapeCity.Spreadsheet, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="GrapeCity.Spreadsheet.DataVisualization, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Spreadsheet.Win, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="celltype\basiccelltype.Designer.vb">
+      <DependentUpon>basiccelltype.vb</DependentUpon>
+    </Compile>
+    <Compile Include="celltype\basiccelltype.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="celltype\cellformat.designer.vb">
+      <DependentUpon>cellformat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="celltype\cellformat.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\areachart.Designer.vb">
+      <DependentUpon>areachart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\areachart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\barchart.Designer.vb">
+      <DependentUpon>barchart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\barchart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\boxwhisker.Designer.vb">
+      <DependentUpon>boxwhisker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\boxwhisker.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\bubblechart.Designer.vb">
+      <DependentUpon>bubblechart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\bubblechart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\chartcontrol.Designer.vb">
+      <DependentUpon>chartcontrol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\chartcontrol.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\columnchart.Designer.vb">
+      <DependentUpon>columnchart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\columnchart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\doughnutchart.Designer.vb">
+      <DependentUpon>doughnutchart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\doughnutchart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\funnel.Designer.vb">
+      <DependentUpon>funnel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\funnel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\histogram.Designer.vb">
+      <DependentUpon>histogram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\histogram.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\linechart.Designer.vb">
+      <DependentUpon>linechart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\linechart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\linechartstyle.Designer.vb">
+      <DependentUpon>linechartstyle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\linechartstyle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\pareto.Designer.vb">
+      <DependentUpon>pareto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\pareto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\piechart.Designer.vb">
+      <DependentUpon>piechart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\piechart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\polarchart.Designer.vb">
+      <DependentUpon>polarchart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\polarchart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\radarchart.Designer.vb">
+      <DependentUpon>radarchart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\radarchart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\stockchart.Designer.vb">
+      <DependentUpon>stockchart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\stockchart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\sunburst.Designer.vb">
+      <DependentUpon>sunburst.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\sunburst.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\treemap.Designer.vb">
+      <DependentUpon>treemap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\treemap.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\waterfall.Designer.vb">
+      <DependentUpon>waterfall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\waterfall.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\xychart.Designer.vb">
+      <DependentUpon>xychart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\xychart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\xyzchart.Designer.vb">
+      <DependentUpon>xyzchart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\xyzchart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="databind\addrows.Designer.vb">
+      <DependentUpon>addrows.vb</DependentUpon>
+    </Compile>
+    <Compile Include="databind\addrows.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="databind\databinding.Designer.vb">
+      <DependentUpon>databinding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="databind\databinding.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="databind\dataunbinding.Designer.vb">
+      <DependentUpon>dataunbinding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="databind\dataunbinding.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="databind\fieldbinding.Designer.vb">
+      <DependentUpon>fieldbinding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="databind\fieldbinding.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="databind\hierarchicalview.Designer.vb">
+      <DependentUpon>hierarchicalview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="databind\hierarchicalview.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="databind\newrows.Designer.vb">
+      <DependentUpon>newrows.vb</DependentUpon>
+    </Compile>
+    <Compile Include="databind\newrows.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="databind\removerows.Designer.vb">
+      <DependentUpon>removerows.vb</DependentUpon>
+    </Compile>
+    <Compile Include="databind\removerows.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="databind\tablebinding.Designer.vb">
+      <DependentUpon>tablebinding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="databind\tablebinding.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemoBase.Designer.vb">
+      <DependentUpon>DemoBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DemoBase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemoBase_settings.Designer.vb">
+      <DependentUpon>DemoBase_settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DemoBase_settings.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\autoformat.Designer.vb">
+      <DependentUpon>autoformat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\autoformat.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\datavalidator.Designer.vb">
+      <DependentUpon>datavalidator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\datavalidator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\arrayformula.Designer.vb">
+      <DependentUpon>arrayformula.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\arrayformula.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\calcignorehidden.Designer.vb">
+      <DependentUpon>calcignorehidden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\calcignorehidden.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\celldragdrop.Designer.vb">
+      <DependentUpon>celldragdrop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\celldragdrop.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\celloverflow.Designer.vb">
+      <DependentUpon>celloverflow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\celloverflow.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\customformula.Designer.vb">
+      <DependentUpon>customformula.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\customformula.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\differentsheetformula.Designer.vb">
+      <DependentUpon>differentsheetformula.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\differentsheetformula.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\displayformula.Designer.vb">
+      <DependentUpon>displayformula.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\displayformula.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\dragdrop.Designer.vb">
+      <DependentUpon>dragdrop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\dragdrop.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\dragfillmenu.Designer.vb">
+      <DependentUpon>dragfillmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\dragfillmenu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\dragfill.Designer.vb">
+      <DependentUpon>dragfill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\dragfill.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\dynamicarray.Designer.vb">
+      <DependentUpon>dynamicarray.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\dynamicarray.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\editmodepermanent.Designer.vb">
+      <DependentUpon>editmodepermanent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\editmodepermanent.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\editmodereplace.Designer.vb">
+      <DependentUpon>editmodereplace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\editmodereplace.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\formula.Designer.vb">
+      <DependentUpon>formula.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\formula.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\goalseek.Designer.vb">
+      <DependentUpon>goalseek.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\goalseek.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\headerfooterformula.designer.vb">
+      <DependentUpon>headerfooterformula.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\headerfooterformula.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\imemode.Designer.vb">
+      <DependentUpon>imemode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\imemode.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\lockedcell.Designer.vb">
+      <DependentUpon>lockedcell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\lockedcell.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\richclipboard.Designer.vb">
+      <DependentUpon>richclipboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\richclipboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\search.Designer.vb">
+      <DependentUpon>search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\useclipboard.Designer.vb">
+      <DependentUpon>useclipboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\useclipboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filtering\autofilter.Designer.vb">
+      <DependentUpon>autofilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="filtering\autofilter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filtering\customfilter.Designer.vb">
+      <DependentUpon>customfilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="filtering\customfilter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filtering\enhancedfilter.Designer.vb">
+      <DependentUpon>enhancedfilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="filtering\enhancedfilter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filtering\filterbar.Designer.vb">
+      <DependentUpon>filterbar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="filtering\filterbar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filtering\filtersort.Designer.vb">
+      <DependentUpon>filtersort.vb</DependentUpon>
+    </Compile>
+    <Compile Include="filtering\filtersort.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filtering\hiderowfilter.Designer.vb">
+      <DependentUpon>hiderowfilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="filtering\hiderowfilter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filtering\rangefilter.designer.vb">
+      <DependentUpon>rangefilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="filtering\rangefilter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filtering\stylerowfilter.Designer.vb">
+      <DependentUpon>stylerowfilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="filtering\stylerowfilter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filtering\unfilteredrows.Designer.vb">
+      <DependentUpon>unfilteredrows.vb</DependentUpon>
+    </Compile>
+    <Compile Include="filtering\unfilteredrows.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FirstViewPage.Designer.vb">
+      <DependentUpon>FirstViewPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FirstViewPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\formulatextbox.Designer.vb">
+      <DependentUpon>formulatextbox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\formulatextbox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="group\grouping.Designer.vb">
+      <DependentUpon>grouping.vb</DependentUpon>
+    </Compile>
+    <Compile Include="group\grouping.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="group\outline.Designer.vb">
+      <DependentUpon>outline.vb</DependentUpon>
+    </Compile>
+    <Compile Include="group\outline.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="group\outlinesummary.Designer.vb">
+      <DependentUpon>outlinesummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="group\outlinesummary.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="importexport\keepexcelsetting.Designer.vb">
+      <DependentUpon>keepexcelsetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="importexport\keepexcelsetting.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="importexport\openexcelfile.Designer.vb">
+      <DependentUpon>openexcelfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="importexport\openexcelfile.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="importexport\opentextfile.Designer.vb">
+      <DependentUpon>opentextfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="importexport\opentextfile.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="importexport\printpdf.Designer.vb">
+      <DependentUpon>printpdf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="importexport\printpdf.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="importexport\saveexcelfile.Designer.vb">
+      <DependentUpon>saveexcelfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="importexport\saveexcelfile.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="importexport\savetextfile.Designer.vb">
+      <DependentUpon>savetextfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="importexport\savetextfile.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inputmancell\gccharmask.Designer.vb">
+      <DependentUpon>gccharmask.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inputmancell\gccharmask.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inputmancell\gccombobox.Designer.vb">
+      <DependentUpon>gccombobox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inputmancell\gccombobox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inputmancell\gcdatetime.Designer.vb">
+      <DependentUpon>gcdatetime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inputmancell\gcdatetime.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inputmancell\gcmask.Designer.vb">
+      <DependentUpon>gcmask.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inputmancell\gcmask.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inputmancell\gcnumber.Designer.vb">
+      <DependentUpon>gcnumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inputmancell\gcnumber.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inputmancell\gctextbox.Designer.vb">
+      <DependentUpon>gctextbox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inputmancell\gctextbox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inputmancell\gctimespan.Designer.vb">
+      <DependentUpon>gctimespan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inputmancell\gctimespan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="print\blackwhiteprint.Designer.vb">
+      <DependentUpon>blackwhiteprint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="print\blackwhiteprint.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="print\ownerprint.Designer.vb">
+      <DependentUpon>ownerprint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="print\ownerprint.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="print\printpreview.Designer.vb">
+      <DependentUpon>printpreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="print\printpreview.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="print\printsetting.Designer.vb">
+      <DependentUpon>printsetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="print\printsetting.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="print\PrintSettingForm.Designer.vb">
+      <DependentUpon>PrintSettingForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="print\PrintSettingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print\excelprintpreview.Designer.vb">
+      <DependentUpon>excelprintpreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="print\excelprintpreview.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="print\duplexprint.Designer.vb">
+      <DependentUpon>duplexprint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="print\duplexprint.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="print\printsheet.Designer.vb">
+      <DependentUpon>printsheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="print\printsheet.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\addcomment.Designer.vb">
+      <DependentUpon>addcomment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\addcomment.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\cellnote.Designer.vb">
+      <DependentUpon>cellnote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\cellnote.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\cellspan.Designer.vb">
+      <DependentUpon>cellspan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\cellspan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\columnfooter.Designer.vb">
+      <DependentUpon>columnfooter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\columnfooter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\dragbandonmoving.Designer.vb">
+      <DependentUpon>dragbandonmoving.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\dragbandonmoving.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\headervisible.Designer.vb">
+      <DependentUpon>headervisible.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\headervisible.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\insertdialog.Designer.vb">
+      <DependentUpon>insertdialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\insertdialog.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\multiheader.Designer.vb">
+      <DependentUpon>multiheader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\multiheader.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\autofitcustomize.Designer.vb">
+      <DependentUpon>autofitcustomize.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\autofitcustomize.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\rowcolmerge.Designer.vb">
+      <DependentUpon>rowcolmerge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\rowcolmerge.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\rowcolmove.Designer.vb">
+      <DependentUpon>rowcolmove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\rowcolmove.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\rowheaderautowidth.Designer.vb">
+      <DependentUpon>rowheaderautowidth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\rowheaderautowidth.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\rowresize.Designer.vb">
+      <DependentUpon>rowresize.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\rowresize.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\rowselector.Designer.vb">
+      <DependentUpon>rowselector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\rowselector.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\rowvisible.Designer.vb">
+      <DependentUpon>rowvisible.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\rowvisible.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\sheetcorner.Designer.vb">
+      <DependentUpon>sheetcorner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\sheetcorner.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\texttip.Designer.vb">
+      <DependentUpon>texttip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\texttip.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\title.Designer.vb">
+      <DependentUpon>title.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\title.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scroll\cellcontentfloat.Designer.vb">
+      <DependentUpon>cellcontentfloat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="scroll\cellcontentfloat.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scroll\frozenline.Designer.vb">
+      <DependentUpon>frozenline.vb</DependentUpon>
+    </Compile>
+    <Compile Include="scroll\frozenline.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scroll\frozenrowcol.Designer.vb">
+      <DependentUpon>frozenrowcol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="scroll\frozenrowcol.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scroll\mousewheel.Designer.vb">
+      <DependentUpon>mousewheel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="scroll\mousewheel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scroll\scrollbartrack.Designer.vb">
+      <DependentUpon>scrollbartrack.vb</DependentUpon>
+    </Compile>
+    <Compile Include="scroll\scrollbartrack.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scroll\scrollbarvisible.Designer.vb">
+      <DependentUpon>scrollbarvisible.vb</DependentUpon>
+    </Compile>
+    <Compile Include="scroll\scrollbarvisible.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scroll\scrollmode.Designer.vb">
+      <DependentUpon>scrollmode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="scroll\scrollmode.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\addselection.Designer.vb">
+      <DependentUpon>addselection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selection\addselection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\canfocus.Designer.vb">
+      <DependentUpon>canfocus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selection\canfocus.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\cellspanselection.Designer.vb">
+      <DependentUpon>cellspanselection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selection\cellspanselection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\clearselection.Designer.vb">
+      <DependentUpon>clearselection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selection\clearselection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\focusindicator.Designer.vb">
+      <DependentUpon>focusindicator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selection\focusindicator.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\getselectedrange.Designer.vb">
+      <DependentUpon>getselectedrange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selection\getselectedrange.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\operationmode.Designer.vb">
+      <DependentUpon>operationmode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selection\operationmode.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\paintactivecell.Designer.vb">
+      <DependentUpon>paintactivecell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selection\paintactivecell.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\paintselectionheader.Designer.vb">
+      <DependentUpon>paintselectionheader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selection\paintselectionheader.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\selectionpolicy.Designer.vb">
+      <DependentUpon>selectionpolicy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selection\selectionpolicy.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\selectionstyle.Designer.vb">
+      <DependentUpon>selectionstyle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selection\selectionstyle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="shape\addshape.Designer.vb">
+      <DependentUpon>addshape.vb</DependentUpon>
+    </Compile>
+    <Compile Include="shape\addshape.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="shape\camerashape.Designer.vb">
+      <DependentUpon>camerashape.vb</DependentUpon>
+    </Compile>
+    <Compile Include="shape\camerashape.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="shape\editshape.Designer.vb">
+      <DependentUpon>editshape.vb</DependentUpon>
+    </Compile>
+    <Compile Include="shape\editshape.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="shape\enhancedcamerashape.Designer.vb">
+      <DependentUpon>enhancedcamerashape.vb</DependentUpon>
+    </Compile>
+    <Compile Include="shape\enhancedcamerashape.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="shape\enhancedshape.Designer.vb">
+      <DependentUpon>enhancedshape.vb</DependentUpon>
+    </Compile>
+    <Compile Include="shape\enhancedshape.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="shape\freeform.Designer.vb">
+      <DependentUpon>freeform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="shape\freeform.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\addtable.Designer.vb">
+      <DependentUpon>addtable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\addtable.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\autotable.Designer.vb">
+      <DependentUpon>autotable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\autotable.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\excelshortcut.Designer.vb">
+      <DependentUpon>excelshortcut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\excelshortcut.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\gettoprowcol.Designer.vb">
+      <DependentUpon>gettoprowcol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\gettoprowcol.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\gridline.Designer.vb">
+      <DependentUpon>gridline.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\gridline.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\inputmap.Designer.vb">
+      <DependentUpon>inputmap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\inputmap.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\movenextcontrol.Designer.vb">
+      <DependentUpon>movenextcontrol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\movenextcontrol.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\multisheet.Designer.vb">
+      <DependentUpon>multisheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\multisheet.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\sheetvisible.Designer.vb">
+      <DependentUpon>sheetvisible.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\sheetvisible.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\slicers.Designer.vb">
+      <DependentUpon>slicers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\slicers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\statusbar.Designer.vb">
+      <DependentUpon>statusbar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\statusbar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\undoredo.Designer.vb">
+      <DependentUpon>undoredo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\undoredo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\viewport.Designer.vb">
+      <DependentUpon>viewport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\viewport.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\zoomfactor.Designer.vb">
+      <DependentUpon>zoomfactor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\zoomfactor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sort\autosort.Designer.vb">
+      <DependentUpon>autosort.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sort\autosort.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sort\customcomparison.Designer.vb">
+      <DependentUpon>customcomparison.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sort\customcomparison.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sort\rangesort.designer.vb">
+      <DependentUpon>rangesort.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sort\rangesort.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sort\unsortedrows.Designer.vb">
+      <DependentUpon>unsortedrows.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sort\unsortedrows.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\backcolor.Designer.vb">
+      <DependentUpon>backcolor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="style\backcolor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\backcolorrotation.Designer.vb">
+      <DependentUpon>backcolorrotation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="style\backcolorrotation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\border.Designer.vb">
+      <DependentUpon>border.vb</DependentUpon>
+    </Compile>
+    <Compile Include="style\border.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\conditionalformat7.Designer.vb">
+      <DependentUpon>conditionalformat7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="style\conditionalformat7.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\diagonalline.Designer.vb">
+      <DependentUpon>diagonalline.vb</DependentUpon>
+    </Compile>
+    <Compile Include="style\diagonalline.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\enhancedborder.Designer.vb">
+      <DependentUpon>enhancedborder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="style\enhancedborder.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\fontsetting.Designer.vb">
+      <DependentUpon>fontsetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="style\fontsetting.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\formulasparkline.Designer.vb">
+      <DependentUpon>formulasparkline.vb</DependentUpon>
+    </Compile>
+    <Compile Include="style\formulasparkline.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\patterngradient.designer.vb">
+      <DependentUpon>patterngradient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="style\patterngradient.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\skin.Designer.vb">
+      <DependentUpon>skin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="style\skin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\sparkline.Designer.vb">
+      <DependentUpon>sparkline.vb</DependentUpon>
+    </Compile>
+    <Compile Include="style\sparkline.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="touch\touchdropdownscale.Designer.vb">
+      <DependentUpon>touchdropdownscale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="touch\touchdropdownscale.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="touch\touchkeyboard.Designer.vb">
+      <DependentUpon>touchkeyboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="touch\touchkeyboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="touch\touchscroll.Designer.vb">
+      <DependentUpon>touchscroll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="touch\touchscroll.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="touch\touchselection.Designer.vb">
+      <DependentUpon>touchselection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="touch\touchselection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="touch\touchstrip.Designer.vb">
+      <DependentUpon>touchstrip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="touch\touchstrip.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="celltype\basiccelltype.resx">
+      <DependentUpon>basiccelltype.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="celltype\cellformat.resx">
+      <DependentUpon>cellformat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\areachart.resx">
+      <DependentUpon>areachart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\barchart.resx">
+      <DependentUpon>barchart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\boxwhisker.resx">
+      <DependentUpon>boxwhisker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\bubblechart.resx">
+      <DependentUpon>bubblechart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\chartcontrol.resx">
+      <DependentUpon>chartcontrol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\columnchart.resx">
+      <DependentUpon>columnchart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\doughnutchart.resx">
+      <DependentUpon>doughnutchart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\funnel.resx">
+      <DependentUpon>funnel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\histogram.resx">
+      <DependentUpon>histogram.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\linechart.resx">
+      <DependentUpon>linechart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\linechartstyle.resx">
+      <DependentUpon>linechartstyle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\pareto.resx">
+      <DependentUpon>pareto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\piechart.resx">
+      <DependentUpon>piechart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\polarchart.resx">
+      <DependentUpon>polarchart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\radarchart.resx">
+      <DependentUpon>radarchart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\stockchart.resx">
+      <DependentUpon>stockchart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\sunburst.resx">
+      <DependentUpon>sunburst.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\treemap.resx">
+      <DependentUpon>treemap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\waterfall.resx">
+      <DependentUpon>waterfall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\xychart.resx">
+      <DependentUpon>xychart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\xyzchart.resx">
+      <DependentUpon>xyzchart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databind\addrows.resx">
+      <DependentUpon>addrows.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databind\databinding.resx">
+      <DependentUpon>databinding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databind\dataunbinding.resx">
+      <DependentUpon>dataunbinding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databind\fieldbinding.resx">
+      <DependentUpon>fieldbinding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databind\hierarchicalview.resx">
+      <DependentUpon>hierarchicalview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databind\newrows.resx">
+      <DependentUpon>newrows.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databind\removerows.resx">
+      <DependentUpon>removerows.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databind\tablebinding.resx">
+      <DependentUpon>tablebinding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DemoBase.resx">
+      <DependentUpon>DemoBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DemoBase_settings.resx">
+      <DependentUpon>DemoBase_settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\autoformat.resx">
+      <DependentUpon>autoformat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\datavalidator.resx">
+      <DependentUpon>datavalidator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\arrayformula.resx">
+      <DependentUpon>arrayformula.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\calcignorehidden.resx">
+      <DependentUpon>calcignorehidden.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\celldragdrop.resx">
+      <DependentUpon>celldragdrop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\celloverflow.resx">
+      <DependentUpon>celloverflow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\customformula.resx">
+      <DependentUpon>customformula.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\differentsheetformula.resx">
+      <DependentUpon>differentsheetformula.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\displayformula.resx">
+      <DependentUpon>displayformula.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\dragdrop.resx">
+      <DependentUpon>dragdrop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\dragfillmenu.resx">
+      <DependentUpon>dragfillmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\dragfill.resx">
+      <DependentUpon>dragfill.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\dynamicarray.resx">
+      <DependentUpon>dynamicarray.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\editmodepermanent.resx">
+      <DependentUpon>editmodepermanent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\editmodereplace.resx">
+      <DependentUpon>editmodereplace.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\formula.resx">
+      <DependentUpon>formula.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\goalseek.resx">
+      <DependentUpon>goalseek.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\headerfooterformula.resx">
+      <DependentUpon>headerfooterformula.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\imemode.resx">
+      <DependentUpon>imemode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\lockedcell.resx">
+      <DependentUpon>lockedcell.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\richclipboard.resx">
+      <DependentUpon>richclipboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\search.resx">
+      <DependentUpon>search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\useclipboard.resx">
+      <DependentUpon>useclipboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtering\autofilter.resx">
+      <DependentUpon>autofilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtering\customfilter.resx">
+      <DependentUpon>customfilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtering\enhancedfilter.resx">
+      <DependentUpon>enhancedfilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtering\filterbar.resx">
+      <DependentUpon>filterbar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtering\filtersort.resx">
+      <DependentUpon>filtersort.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtering\hiderowfilter.resx">
+      <DependentUpon>hiderowfilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtering\rangefilter.resx">
+      <DependentUpon>rangefilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtering\stylerowfilter.resx">
+      <DependentUpon>stylerowfilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtering\unfilteredrows.resx">
+      <DependentUpon>unfilteredrows.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstViewPage.resx">
+      <DependentUpon>FirstViewPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\formulatextbox.resx">
+      <DependentUpon>formulatextbox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="group\grouping.resx">
+      <DependentUpon>grouping.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="group\outline.resx">
+      <DependentUpon>outline.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="group\outlinesummary.resx">
+      <DependentUpon>outlinesummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="importexport\keepexcelsetting.resx">
+      <DependentUpon>keepexcelsetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="importexport\openexcelfile.resx">
+      <DependentUpon>openexcelfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="importexport\opentextfile.resx">
+      <DependentUpon>opentextfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="importexport\printpdf.resx">
+      <DependentUpon>printpdf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="importexport\saveexcelfile.resx">
+      <DependentUpon>saveexcelfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="importexport\savetextfile.resx">
+      <DependentUpon>savetextfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inputmancell\gccharmask.resx">
+      <DependentUpon>gccharmask.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inputmancell\gccombobox.resx">
+      <DependentUpon>gccombobox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inputmancell\gcdatetime.resx">
+      <DependentUpon>gcdatetime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inputmancell\gcmask.resx">
+      <DependentUpon>gcmask.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inputmancell\gcnumber.resx">
+      <DependentUpon>gcnumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inputmancell\gctextbox.resx">
+      <DependentUpon>gctextbox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inputmancell\gctimespan.resx">
+      <DependentUpon>gctimespan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\blackwhiteprint.resx">
+      <DependentUpon>blackwhiteprint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\ownerprint.resx">
+      <DependentUpon>ownerprint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\printpreview.resx">
+      <DependentUpon>printpreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\printsetting.resx">
+      <DependentUpon>printsetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\PrintSettingForm.resx">
+      <DependentUpon>PrintSettingForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\excelprintpreview.resx">
+      <DependentUpon>excelprintpreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\duplexprint.resx">
+      <DependentUpon>duplexprint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\printsheet.resx">
+      <DependentUpon>printsheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\addcomment.resx">
+      <DependentUpon>addcomment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\dragbandonmoving.resx">
+      <DependentUpon>dragbandonmoving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\insertdialog.resx">
+      <DependentUpon>insertdialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\rowheaderautowidth.resx">
+      <DependentUpon>rowheaderautowidth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scroll\cellcontentfloat.resx">
+      <DependentUpon>cellcontentfloat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scroll\frozenline.resx">
+      <DependentUpon>frozenline.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scroll\frozenrowcol.resx">
+      <DependentUpon>frozenrowcol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scroll\mousewheel.resx">
+      <DependentUpon>mousewheel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scroll\scrollbartrack.resx">
+      <DependentUpon>scrollbartrack.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scroll\scrollbarvisible.resx">
+      <DependentUpon>scrollbarvisible.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scroll\scrollmode.resx">
+      <DependentUpon>scrollmode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\addselection.resx">
+      <DependentUpon>addselection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\canfocus.resx">
+      <DependentUpon>canfocus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\cellspanselection.resx">
+      <DependentUpon>cellspanselection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\clearselection.resx">
+      <DependentUpon>clearselection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\focusindicator.resx">
+      <DependentUpon>focusindicator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\getselectedrange.resx">
+      <DependentUpon>getselectedrange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\operationmode.resx">
+      <DependentUpon>operationmode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\paintactivecell.resx">
+      <DependentUpon>paintactivecell.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\paintselectionheader.resx">
+      <DependentUpon>paintselectionheader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\selectionpolicy.resx">
+      <DependentUpon>selectionpolicy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\selectionstyle.resx">
+      <DependentUpon>selectionstyle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shape\addshape.resx">
+      <DependentUpon>addshape.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shape\camerashape.resx">
+      <DependentUpon>camerashape.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shape\editshape.resx">
+      <DependentUpon>editshape.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shape\enhancedcamerashape.resx">
+      <DependentUpon>enhancedcamerashape.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shape\enhancedshape.resx">
+      <DependentUpon>enhancedshape.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shape\freeform.resx">
+      <DependentUpon>freeform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\addtable.resx">
+      <DependentUpon>addtable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\autotable.resx">
+      <DependentUpon>autotable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\excelshortcut.resx">
+      <DependentUpon>excelshortcut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\gettoprowcol.resx">
+      <DependentUpon>gettoprowcol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\gridline.resx">
+      <DependentUpon>gridline.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\inputmap.resx">
+      <DependentUpon>inputmap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\movenextcontrol.resx">
+      <DependentUpon>movenextcontrol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\multisheet.resx">
+      <DependentUpon>multisheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\sheetvisible.resx">
+      <DependentUpon>sheetvisible.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\slicers.resx">
+      <DependentUpon>slicers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\statusbar.resx">
+      <DependentUpon>statusbar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\undoredo.resx">
+      <DependentUpon>undoredo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\viewport.resx">
+      <DependentUpon>viewport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\zoomfactor.resx">
+      <DependentUpon>zoomfactor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sort\autosort.resx">
+      <DependentUpon>autosort.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sort\customcomparison.resx">
+      <DependentUpon>customcomparison.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sort\rangesort.resx">
+      <DependentUpon>rangesort.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sort\unsortedrows.resx">
+      <DependentUpon>unsortedrows.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\backcolor.resx">
+      <DependentUpon>backcolor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\backcolorrotation.resx">
+      <DependentUpon>backcolorrotation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\border.resx">
+      <DependentUpon>border.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\conditionalformat7.resx">
+      <DependentUpon>conditionalformat7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\diagonalline.resx">
+      <DependentUpon>diagonalline.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\enhancedborder.resx">
+      <DependentUpon>enhancedborder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\fontsetting.resx">
+      <DependentUpon>fontsetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\formulasparkline.resx">
+      <DependentUpon>formulasparkline.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\patterngradient.resx">
+      <DependentUpon>patterngradient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\skin.resx">
+      <DependentUpon>skin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\sparkline.resx">
+      <DependentUpon>sparkline.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="touch\touchdropdownscale.resx">
+      <DependentUpon>touchdropdownscale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="touch\touchkeyboard.resx">
+      <DependentUpon>touchkeyboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="touch\touchscroll.resx">
+      <DependentUpon>touchscroll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="touch\touchselection.resx">
+      <DependentUpon>touchselection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="touch\touchstrip.resx">
+      <DependentUpon>touchstrip.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="rowcolcell\cellnote.resx">
+      <DependentUpon>cellnote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\cellspan.resx">
+      <DependentUpon>cellspan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\columnfooter.resx">
+      <DependentUpon>columnfooter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\headervisible.resx">
+      <DependentUpon>headervisible.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\multiheader.resx">
+      <DependentUpon>multiheader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\autofitcustomize.resx">
+      <DependentUpon>autofitcustomize.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\rowcolmerge.resx">
+      <DependentUpon>rowcolmerge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\rowcolmove.resx">
+      <DependentUpon>rowcolmove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\rowresize.resx">
+      <DependentUpon>rowresize.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\rowselector.resx">
+      <DependentUpon>rowselector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\rowvisible.resx">
+      <DependentUpon>rowvisible.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\sheetcorner.resx">
+      <DependentUpon>sheetcorner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\texttip.resx">
+      <DependentUpon>texttip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\title.resx">
+      <DependentUpon>title.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleData\data.xml" />
+    <EmbeddedResource Include="SampleData\data30.xml" />
+    <EmbeddedResource Include="SampleData\data50.xml" />
+    <EmbeddedResource Include="SampleData\databind.xml" />
+    <EmbeddedResource Include="SampleData\dataconditionalformat.xml" />
+    <EmbeddedResource Include="SampleData\dataexcelfilter.xml" />
+    <EmbeddedResource Include="SampleData\datanum1.xml" />
+    <EmbeddedResource Include="SampleData\datanum2.xml" />
+    <EmbeddedResource Include="SampleData\datanum3.xml" />
+    <EmbeddedResource Include="SampleData\datanum4.xml" />
+    <EmbeddedResource Include="SampleData\datapln.xml" />
+    <EmbeddedResource Include="SampleData\datares.xml" />
+    <EmbeddedResource Include="images\AutoFill.png" />
+    <EmbeddedResource Include="images\history.gif" />
+    <EmbeddedResource Include="images\music.gif" />
+    <EmbeddedResource Include="images\science.gif" />
+    <EmbeddedResource Include="images\TouchMenuItemDownArrow.png" />
+    <None Include="Resources\Common\bg.png" />
+    <None Include="Resources\Common\fotter.png" />
+    <None Include="Resources\Common\header_b.png" />
+    <None Include="Resources\Common\header_g.png" />
+    <None Include="Resources\Common\menuheader.png" />
+    <None Include="Resources\Common\separator.png" />
+    <None Include="Resources\Common\trialbutton.png" />
+    <None Include="Resources\Common\twittericon.png" />
+    <None Include="Resources\cube.png" />
+    <None Include="Resources\mainvisual.png" />
+    <None Include="Resources\product.ico" />
+    <None Include="Resources\product_logo.png" />
+    <None Include="Resources\Common\separator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows インストーラー 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SampleData\datascroll.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SampleData\Holiday.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\MESCIUS_Logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
