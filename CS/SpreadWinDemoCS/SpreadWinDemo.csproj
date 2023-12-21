@@ -1,0 +1,1767 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{898CAAD9-208C-4A29-BE12-67C05677534D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SpreadWinDemo</RootNamespace>
+    <AssemblyName>SpreadWinDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetZone>LocalIntranet</TargetZone>
+    <SignManifests>false</SignManifests>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>SPREAD for Windows Forms 10.0J 基本機能デモ</ProductName>
+    <PublisherName>MESCIUS ClickOnce Demo</PublisherName>
+    <WebPage>clickonce.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.CalcEngine, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Excel, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.PDF, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Win, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Win.Chart, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Win.SpreadJ, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.CalcEngine, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="GrapeCity.Spreadsheet, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="GrapeCity.Spreadsheet.DataVisualization, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Spreadsheet.Win, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="celltype\basiccelltype.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="celltype\basiccelltype.Designer.cs">
+      <DependentUpon>basiccelltype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="celltype\cellformat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="celltype\cellformat.designer.cs">
+      <DependentUpon>cellformat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\areachart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\areachart.Designer.cs">
+      <DependentUpon>areachart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\boxwhisker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\boxwhisker.Designer.cs">
+      <DependentUpon>boxwhisker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\bubblechart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\bubblechart.Designer.cs">
+      <DependentUpon>bubblechart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\chartcontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\chartcontrol.Designer.cs">
+      <DependentUpon>chartcontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\columnchart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\columnchart.Designer.cs">
+      <DependentUpon>columnchart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\doughnutchart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\doughnutchart.Designer.cs">
+      <DependentUpon>doughnutchart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\funnel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\funnel.Designer.cs">
+      <DependentUpon>funnel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\histogram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\histogram.Designer.cs">
+      <DependentUpon>histogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\linechart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\linechart.Designer.cs">
+      <DependentUpon>linechart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\linechartstyle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\linechartstyle.Designer.cs">
+      <DependentUpon>linechartstyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\pareto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\pareto.Designer.cs">
+      <DependentUpon>pareto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\piechart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\piechart.Designer.cs">
+      <DependentUpon>piechart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\polarchart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\polarchart.Designer.cs">
+      <DependentUpon>polarchart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\radarchart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\radarchart.Designer.cs">
+      <DependentUpon>radarchart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\stockchart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\stockchart.Designer.cs">
+      <DependentUpon>stockchart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\sunburst.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\sunburst.Designer.cs">
+      <DependentUpon>sunburst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\treemap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\treemap.Designer.cs">
+      <DependentUpon>treemap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\waterfall.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\waterfall.Designer.cs">
+      <DependentUpon>waterfall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\xychart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\xychart.Designer.cs">
+      <DependentUpon>xychart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\xyzchart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\xyzchart.Designer.cs">
+      <DependentUpon>xyzchart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="databind\addrows.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="databind\addrows.Designer.cs">
+      <DependentUpon>addrows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="databind\databinding.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="databind\databinding.Designer.cs">
+      <DependentUpon>databinding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="databind\dataunbinding.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="databind\dataunbinding.Designer.cs">
+      <DependentUpon>dataunbinding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="databind\fieldbinding.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="databind\fieldbinding.Designer.cs">
+      <DependentUpon>fieldbinding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="databind\hierarchicalview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="databind\hierarchicalview.Designer.cs">
+      <DependentUpon>hierarchicalview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="databind\newrows.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="databind\newrows.Designer.cs">
+      <DependentUpon>newrows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="databind\removerows.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="databind\removerows.Designer.cs">
+      <DependentUpon>removerows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="databind\tablebinding.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="databind\tablebinding.Designer.cs">
+      <DependentUpon>tablebinding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemoBase.Designer.cs">
+      <DependentUpon>DemoBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\barchart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\barchart.Designer.cs">
+      <DependentUpon>barchart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\autoformat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\autoformat.Designer.cs">
+      <DependentUpon>autoformat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\calcignorehidden.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\calcignorehidden.Designer.cs">
+      <DependentUpon>calcignorehidden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\celldragdrop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\celldragdrop.Designer.cs">
+      <DependentUpon>celldragdrop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\celloverflow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\celloverflow.Designer.cs">
+      <DependentUpon>celloverflow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\customformula.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\customformula.Designer.cs">
+      <DependentUpon>customformula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\differentsheetformula.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\differentsheetformula.Designer.cs">
+      <DependentUpon>differentsheetformula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\displayformula.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\displayformula.Designer.cs">
+      <DependentUpon>displayformula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\dragdrop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\dragdrop.Designer.cs">
+      <DependentUpon>dragdrop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\dragfillmenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\dragfillmenu.Designer.cs">
+      <DependentUpon>dragfillmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\dragfill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\dragfill.Designer.cs">
+      <DependentUpon>dragfill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\datavalidator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\datavalidator.Designer.cs">
+      <DependentUpon>datavalidator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\dynamicarray.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\dynamicarray.Designer.cs">
+      <DependentUpon>dynamicarray.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\editmodepermanent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\editmodepermanent.Designer.cs">
+      <DependentUpon>editmodepermanent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\editmodereplace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\editmodereplace.Designer.cs">
+      <DependentUpon>editmodereplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\arrayformula.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\arrayformula.Designer.cs">
+      <DependentUpon>arrayformula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\formula.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\formula.Designer.cs">
+      <DependentUpon>formula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\formulatextbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\formulatextbox.Designer.cs">
+      <DependentUpon>formulatextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\goalseek.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\goalseek.Designer.cs">
+      <DependentUpon>goalseek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\headerfooterformula.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\headerfooterformula.designer.cs">
+      <DependentUpon>headerfooterformula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\imemode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\imemode.Designer.cs">
+      <DependentUpon>imemode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\lockedcell.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\lockedcell.Designer.cs">
+      <DependentUpon>lockedcell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\richclipboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\richclipboard.Designer.cs">
+      <DependentUpon>richclipboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit\useclipboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\useclipboard.Designer.cs">
+      <DependentUpon>useclipboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filtering\autofilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filtering\autofilter.Designer.cs">
+      <DependentUpon>autofilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filtering\customfilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filtering\customfilter.Designer.cs">
+      <DependentUpon>customfilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filtering\enhancedfilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filtering\enhancedfilter.Designer.cs">
+      <DependentUpon>enhancedfilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filtering\filterbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filtering\filterbar.Designer.cs">
+      <DependentUpon>filterbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filtering\filtersort.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filtering\filtersort.Designer.cs">
+      <DependentUpon>filtersort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filtering\hiderowfilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filtering\hiderowfilter.Designer.cs">
+      <DependentUpon>hiderowfilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filtering\rangefilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filtering\rangefilter.designer.cs">
+      <DependentUpon>rangefilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filtering\stylerowfilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filtering\stylerowfilter.Designer.cs">
+      <DependentUpon>stylerowfilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filtering\unfilteredrows.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="filtering\unfilteredrows.Designer.cs">
+      <DependentUpon>unfilteredrows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstViewPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FirstViewPage.Designer.cs">
+      <DependentUpon>FirstViewPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="group\grouping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="group\grouping.Designer.cs">
+      <DependentUpon>grouping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="group\outline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="group\outline.Designer.cs">
+      <DependentUpon>outline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="group\outlinesummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="group\outlinesummary.Designer.cs">
+      <DependentUpon>outlinesummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="importexport\openexcelfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="importexport\openexcelfile.Designer.cs">
+      <DependentUpon>openexcelfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="importexport\opentextfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="importexport\opentextfile.Designer.cs">
+      <DependentUpon>opentextfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="importexport\printpdf.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="importexport\printpdf.Designer.cs">
+      <DependentUpon>printpdf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="importexport\saveexcelfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="importexport\saveexcelfile.Designer.cs">
+      <DependentUpon>saveexcelfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="importexport\savetextfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="importexport\savetextfile.Designer.cs">
+      <DependentUpon>savetextfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inputmancell\gccharmask.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inputmancell\gccharmask.Designer.cs">
+      <DependentUpon>gccharmask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inputmancell\gccombobox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inputmancell\gccombobox.Designer.cs">
+      <DependentUpon>gccombobox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inputmancell\gcdatetime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inputmancell\gcdatetime.Designer.cs">
+      <DependentUpon>gcdatetime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inputmancell\gcmask.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inputmancell\gcmask.Designer.cs">
+      <DependentUpon>gcmask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inputmancell\gcnumber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inputmancell\gcnumber.Designer.cs">
+      <DependentUpon>gcnumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inputmancell\gctextbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inputmancell\gctextbox.Designer.cs">
+      <DependentUpon>gctextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inputmancell\gctimespan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inputmancell\gctimespan.Designer.cs">
+      <DependentUpon>gctimespan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\blackwhiteprint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="print\blackwhiteprint.Designer.cs">
+      <DependentUpon>blackwhiteprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\excelprintpreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="print\excelprintpreview.Designer.cs">
+      <DependentUpon>excelprintpreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\ownerprint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="print\ownerprint.Designer.cs">
+      <DependentUpon>ownerprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\printpreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="print\printpreview.Designer.cs">
+      <DependentUpon>printpreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\printsetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="print\printsetting.Designer.cs">
+      <DependentUpon>printsetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\PrintSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print\PrintSettingForm.Designer.cs">
+      <DependentUpon>PrintSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\duplexprint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="print\duplexprint.Designer.cs">
+      <DependentUpon>duplexprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\printsheet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="print\printsheet.Designer.cs">
+      <DependentUpon>printsheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DemoBase_settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemoBase_settings.Designer.cs">
+      <DependentUpon>DemoBase_settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\addcomment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\addcomment.Designer.cs">
+      <DependentUpon>addcomment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\cellnote.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\cellnote.Designer.cs">
+      <DependentUpon>cellnote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\cellspan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\cellspan.Designer.cs">
+      <DependentUpon>cellspan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\columnfooter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\columnfooter.Designer.cs">
+      <DependentUpon>columnfooter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\dragbandonmoving.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\dragbandonmoving.designer.cs">
+      <DependentUpon>dragbandonmoving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\headervisible.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\headervisible.Designer.cs">
+      <DependentUpon>headervisible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\insertdialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\insertdialog.Designer.cs">
+      <DependentUpon>insertdialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\multiheader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\multiheader.Designer.cs">
+      <DependentUpon>multiheader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\autofitcusomize.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\autofitcusomize.Designer.cs">
+      <DependentUpon>autofitcusomize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\rowcolmerge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\rowcolmerge.Designer.cs">
+      <DependentUpon>rowcolmerge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\rowcolmove.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\rowcolmove.Designer.cs">
+      <DependentUpon>rowcolmove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\rowheaderautowidth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\rowheaderautowidth.designer.cs">
+      <DependentUpon>rowheaderautowidth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\rowresize.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\rowresize.Designer.cs">
+      <DependentUpon>rowresize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\rowselector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\rowselector.Designer.cs">
+      <DependentUpon>rowselector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\rowvisible.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\rowvisible.Designer.cs">
+      <DependentUpon>rowvisible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\sheetcorner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\sheetcorner.Designer.cs">
+      <DependentUpon>sheetcorner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\texttip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\texttip.Designer.cs">
+      <DependentUpon>texttip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\title.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\title.Designer.cs">
+      <DependentUpon>title.cs</DependentUpon>
+    </Compile>
+    <Compile Include="scroll\cellcontentfloat .cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scroll\cellcontentfloat .Designer.cs">
+      <DependentUpon>cellcontentfloat .cs</DependentUpon>
+    </Compile>
+    <Compile Include="scroll\frozenline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scroll\frozenline.Designer.cs">
+      <DependentUpon>frozenline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="scroll\frozenrowcol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scroll\frozenrowcol.Designer.cs">
+      <DependentUpon>frozenrowcol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="scroll\mousewheel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scroll\mousewheel.Designer.cs">
+      <DependentUpon>mousewheel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="scroll\scrollbartrack.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scroll\scrollbartrack.Designer.cs">
+      <DependentUpon>scrollbartrack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="scroll\scrollbarvisible.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scroll\scrollbarvisible.Designer.cs">
+      <DependentUpon>scrollbarvisible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="scroll\scrollmode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scroll\scrollmode.Designer.cs">
+      <DependentUpon>scrollmode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selection\addselection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\addselection.Designer.cs">
+      <DependentUpon>addselection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selection\canfocus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\canfocus.Designer.cs">
+      <DependentUpon>canfocus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selection\cellspanselection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\cellspanselection.Designer.cs">
+      <DependentUpon>cellspanselection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selection\clearselection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\clearselection.Designer.cs">
+      <DependentUpon>clearselection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selection\focusindicator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\focusindicator.Designer.cs">
+      <DependentUpon>focusindicator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selection\getselectedrange.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\getselectedrange.Designer.cs">
+      <DependentUpon>getselectedrange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selection\operationmode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\operationmode.Designer.cs">
+      <DependentUpon>operationmode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selection\paintactivecell.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\paintactivecell.Designer.cs">
+      <DependentUpon>paintactivecell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selection\paintselectionheader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\paintselectionheader.Designer.cs">
+      <DependentUpon>paintselectionheader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selection\selectionpolicy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\selectionpolicy.Designer.cs">
+      <DependentUpon>selectionpolicy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selection\selectionstyle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="selection\selectionstyle.Designer.cs">
+      <DependentUpon>selectionstyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shape\addshape.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="shape\addshape.Designer.cs">
+      <DependentUpon>addshape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shape\camerashape.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="shape\camerashape.Designer.cs">
+      <DependentUpon>camerashape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shape\editshape.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="shape\editshape.Designer.cs">
+      <DependentUpon>editshape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shape\enhancedcamerashape.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="shape\enhancedcamerashape.Designer.cs">
+      <DependentUpon>enhancedcamerashape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shape\enhancedshape.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="shape\enhancedshape.Designer.cs">
+      <DependentUpon>enhancedshape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shape\freeform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="shape\freeform.Designer.cs">
+      <DependentUpon>freeform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\addtable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\addtable.Designer.cs">
+      <DependentUpon>addtable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\autotable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\autotable.Designer.cs">
+      <DependentUpon>autotable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\excelshortcut.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\excelshortcut.Designer.cs">
+      <DependentUpon>excelshortcut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\gettoprowcol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\gettoprowcol.Designer.cs">
+      <DependentUpon>gettoprowcol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\gridline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\gridline.Designer.cs">
+      <DependentUpon>gridline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\inputmap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\inputmap.Designer.cs">
+      <DependentUpon>inputmap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="importexport\keepexcelsetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="importexport\keepexcelsetting.Designer.cs">
+      <DependentUpon>keepexcelsetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\movenextcontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\movenextcontrol.Designer.cs">
+      <DependentUpon>movenextcontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\multisheet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\multisheet.Designer.cs">
+      <DependentUpon>multisheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\sheetvisible.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\sheetvisible.Designer.cs">
+      <DependentUpon>sheetvisible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\slicers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\slicers.Designer.cs">
+      <DependentUpon>slicers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\statusbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\statusbar.Designer.cs">
+      <DependentUpon>statusbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\undoredo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\undoredo.Designer.cs">
+      <DependentUpon>undoredo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\viewport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\viewport.Designer.cs">
+      <DependentUpon>viewport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\zoomfactor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\zoomfactor.Designer.cs">
+      <DependentUpon>zoomfactor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sort\autosort.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sort\autosort.Designer.cs">
+      <DependentUpon>autosort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sort\customcomparison.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sort\customcomparison.Designer.cs">
+      <DependentUpon>customcomparison.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sort\rangesort.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sort\rangesort.Designer.cs">
+      <DependentUpon>rangesort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sort\unsortedrows.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sort\unsortedrows.Designer.cs">
+      <DependentUpon>unsortedrows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="style\backcolor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\backcolor.Designer.cs">
+      <DependentUpon>backcolor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="style\backcolorrotation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\backcolorrotation.designer.cs">
+      <DependentUpon>backcolorrotation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="style\border.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\border.Designer.cs">
+      <DependentUpon>border.cs</DependentUpon>
+    </Compile>
+    <Compile Include="style\conditionalformat7.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\conditionalformat7.Designer.cs">
+      <DependentUpon>conditionalformat7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="style\diagonalline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\diagonalline.Designer.cs">
+      <DependentUpon>diagonalline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="style\enhancedborder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\enhancedborder.Designer.cs">
+      <DependentUpon>enhancedborder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="style\fontsetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\fontsetting.Designer.cs">
+      <DependentUpon>fontsetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="style\formulasparkline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\formulasparkline.Designer.cs">
+      <DependentUpon>formulasparkline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="style\patterngradient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\patterngradient.designer.cs">
+      <DependentUpon>patterngradient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="style\skin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\skin.Designer.cs">
+      <DependentUpon>skin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="style\sparkline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="style\sparkline.Designer.cs">
+      <DependentUpon>sparkline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="touch\touchdropdownscale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="touch\touchdropdownscale.Designer.cs">
+      <DependentUpon>touchdropdownscale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="touch\touchkeyboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="touch\touchkeyboard.Designer.cs">
+      <DependentUpon>touchkeyboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="touch\touchscroll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="touch\touchscroll.Designer.cs">
+      <DependentUpon>touchscroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="touch\touchselection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="touch\touchselection.Designer.cs">
+      <DependentUpon>touchselection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="touch\touchstrip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="touch\touchstrip.Designer.cs">
+      <DependentUpon>touchstrip.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="celltype\basiccelltype.resx">
+      <DependentUpon>basiccelltype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="celltype\cellformat.resx">
+      <DependentUpon>cellformat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\areachart.resx">
+      <DependentUpon>areachart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\boxwhisker.resx">
+      <DependentUpon>boxwhisker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\bubblechart.resx">
+      <DependentUpon>bubblechart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\chartcontrol.resx">
+      <DependentUpon>chartcontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\columnchart.resx">
+      <DependentUpon>columnchart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\doughnutchart.resx">
+      <DependentUpon>doughnutchart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\funnel.resx">
+      <DependentUpon>funnel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\histogram.resx">
+      <DependentUpon>histogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\linechart.resx">
+      <DependentUpon>linechart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\linechartstyle.resx">
+      <DependentUpon>linechartstyle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\pareto.resx">
+      <DependentUpon>pareto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\piechart.resx">
+      <DependentUpon>piechart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\polarchart.resx">
+      <DependentUpon>polarchart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\radarchart.resx">
+      <DependentUpon>radarchart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\stockchart.resx">
+      <DependentUpon>stockchart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\sunburst.resx">
+      <DependentUpon>sunburst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\treemap.resx">
+      <DependentUpon>treemap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\waterfall.resx">
+      <DependentUpon>waterfall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\xychart.resx">
+      <DependentUpon>xychart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\xyzchart.resx">
+      <DependentUpon>xyzchart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databind\addrows.resx">
+      <DependentUpon>addrows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databind\databinding.resx">
+      <DependentUpon>databinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databind\dataunbinding.resx">
+      <DependentUpon>dataunbinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databind\fieldbinding.resx">
+      <DependentUpon>fieldbinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databind\hierarchicalview.resx">
+      <DependentUpon>hierarchicalview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databind\newrows.resx">
+      <DependentUpon>newrows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databind\removerows.resx">
+      <DependentUpon>removerows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databind\tablebinding.resx">
+      <DependentUpon>tablebinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DemoBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DemoBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\barchart.resx">
+      <DependentUpon>barchart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\autoformat.resx">
+      <DependentUpon>autoformat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\calcignorehidden.resx">
+      <DependentUpon>calcignorehidden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\celldragdrop.resx">
+      <DependentUpon>celldragdrop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\celloverflow.resx">
+      <DependentUpon>celloverflow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\customformula.resx">
+      <DependentUpon>customformula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\differentsheetformula.resx">
+      <DependentUpon>differentsheetformula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\displayformula.resx">
+      <DependentUpon>displayformula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\dragdrop.resx">
+      <DependentUpon>dragdrop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\dragfillmenu.resx">
+      <DependentUpon>dragfillmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\dragfill.resx">
+      <DependentUpon>dragfill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\datavalidator.resx">
+      <DependentUpon>datavalidator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\dynamicarray.resx">
+      <DependentUpon>dynamicarray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\editmodepermanent.resx">
+      <DependentUpon>editmodepermanent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\editmodereplace.resx">
+      <DependentUpon>editmodereplace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\arrayformula.resx">
+      <DependentUpon>arrayformula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\formula.resx">
+      <DependentUpon>formula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\formulatextbox.resx">
+      <DependentUpon>formulatextbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\goalseek.resx">
+      <DependentUpon>goalseek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\headerfooterformula.resx">
+      <DependentUpon>headerfooterformula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\imemode.resx">
+      <DependentUpon>imemode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\lockedcell.resx">
+      <DependentUpon>lockedcell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\richclipboard.resx">
+      <DependentUpon>richclipboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\useclipboard.resx">
+      <DependentUpon>useclipboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtering\autofilter.resx">
+      <DependentUpon>autofilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtering\customfilter.resx">
+      <DependentUpon>customfilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtering\enhancedfilter.resx">
+      <DependentUpon>enhancedfilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtering\filterbar.resx">
+      <DependentUpon>filterbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtering\filtersort.resx">
+      <DependentUpon>filtersort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtering\hiderowfilter.resx">
+      <DependentUpon>hiderowfilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtering\rangefilter.resx">
+      <DependentUpon>rangefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtering\stylerowfilter.resx">
+      <DependentUpon>stylerowfilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtering\unfilteredrows.resx">
+      <DependentUpon>unfilteredrows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstViewPage.resx">
+      <DependentUpon>FirstViewPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="group\grouping.resx">
+      <DependentUpon>grouping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="group\outline.resx">
+      <DependentUpon>outline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="group\outlinesummary.resx">
+      <DependentUpon>outlinesummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="importexport\openexcelfile.resx">
+      <DependentUpon>openexcelfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="importexport\opentextfile.resx">
+      <DependentUpon>opentextfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="importexport\printpdf.resx">
+      <DependentUpon>printpdf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="importexport\saveexcelfile.resx">
+      <DependentUpon>saveexcelfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="importexport\savetextfile.resx">
+      <DependentUpon>savetextfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inputmancell\gccharmask.resx">
+      <DependentUpon>gccharmask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inputmancell\gccombobox.resx">
+      <DependentUpon>gccombobox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inputmancell\gcdatetime.resx">
+      <DependentUpon>gcdatetime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inputmancell\gcmask.resx">
+      <DependentUpon>gcmask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inputmancell\gcnumber.resx">
+      <DependentUpon>gcnumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inputmancell\gctextbox.resx">
+      <DependentUpon>gctextbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inputmancell\gctimespan.resx">
+      <DependentUpon>gctimespan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\blackwhiteprint.resx">
+      <DependentUpon>blackwhiteprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\excelprintpreview.resx">
+      <DependentUpon>excelprintpreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\ownerprint.resx">
+      <DependentUpon>ownerprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\printpreview.resx">
+      <DependentUpon>printpreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\printsetting.resx">
+      <DependentUpon>printsetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\PrintSettingForm.resx">
+      <DependentUpon>PrintSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\duplexprint.resx">
+      <DependentUpon>duplexprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\printsheet.resx">
+      <DependentUpon>printsheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DemoBase_settings.resx">
+      <DependentUpon>DemoBase_settings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\addcomment.resx">
+      <DependentUpon>addcomment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\cellnote.resx">
+      <DependentUpon>cellnote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\cellspan.resx">
+      <DependentUpon>cellspan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\columnfooter.resx">
+      <DependentUpon>columnfooter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\dragbandonmoving.resx">
+      <DependentUpon>dragbandonmoving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\headervisible.resx">
+      <DependentUpon>headervisible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\insertdialog.resx">
+      <DependentUpon>insertdialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\multiheader.resx">
+      <DependentUpon>multiheader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\autofitcusomize.resx">
+      <DependentUpon>autofitcusomize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\rowcolmerge.resx">
+      <DependentUpon>rowcolmerge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\rowcolmove.resx">
+      <DependentUpon>rowcolmove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\rowheaderautowidth.resx">
+      <DependentUpon>rowheaderautowidth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\rowresize.resx">
+      <DependentUpon>rowresize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\rowselector.resx">
+      <DependentUpon>rowselector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\rowvisible.resx">
+      <DependentUpon>rowvisible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\texttip.resx">
+      <DependentUpon>texttip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scroll\cellcontentfloat .resx">
+      <DependentUpon>cellcontentfloat .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scroll\frozenline.resx">
+      <DependentUpon>frozenline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scroll\frozenrowcol.resx">
+      <DependentUpon>frozenrowcol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scroll\mousewheel.resx">
+      <DependentUpon>mousewheel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scroll\scrollbartrack.resx">
+      <DependentUpon>scrollbartrack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scroll\scrollbarvisible.resx">
+      <DependentUpon>scrollbarvisible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scroll\scrollmode.resx">
+      <DependentUpon>scrollmode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\addselection.resx">
+      <DependentUpon>addselection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\canfocus.resx">
+      <DependentUpon>canfocus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\cellspanselection.resx">
+      <DependentUpon>cellspanselection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\clearselection.resx">
+      <DependentUpon>clearselection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\focusindicator.resx">
+      <DependentUpon>focusindicator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\getselectedrange.resx">
+      <DependentUpon>getselectedrange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\operationmode.resx">
+      <DependentUpon>operationmode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\paintactivecell.resx">
+      <DependentUpon>paintactivecell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\paintselectionheader.resx">
+      <DependentUpon>paintselectionheader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\selectionpolicy.resx">
+      <DependentUpon>selectionpolicy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\selectionstyle.resx">
+      <DependentUpon>selectionstyle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shape\addshape.resx">
+      <DependentUpon>addshape.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shape\camerashape.resx">
+      <DependentUpon>camerashape.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shape\editshape.resx">
+      <DependentUpon>editshape.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shape\enhancedcamerashape.resx">
+      <DependentUpon>enhancedcamerashape.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shape\enhancedshape.resx">
+      <DependentUpon>enhancedshape.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shape\freeform.resx">
+      <DependentUpon>freeform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\addtable.resx">
+      <DependentUpon>addtable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\autotable.resx">
+      <DependentUpon>autotable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\excelshortcut.resx">
+      <DependentUpon>excelshortcut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\gettoprowcol.resx">
+      <DependentUpon>gettoprowcol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\gridline.resx">
+      <DependentUpon>gridline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\inputmap.resx">
+      <DependentUpon>inputmap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="importexport\keepexcelsetting.resx">
+      <DependentUpon>keepexcelsetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\movenextcontrol.resx">
+      <DependentUpon>movenextcontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\multisheet.resx">
+      <DependentUpon>multisheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\sheetvisible.resx">
+      <DependentUpon>sheetvisible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\slicers.resx">
+      <DependentUpon>slicers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\statusbar.resx">
+      <DependentUpon>statusbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\undoredo.resx">
+      <DependentUpon>undoredo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\viewport.resx">
+      <DependentUpon>viewport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\zoomfactor.resx">
+      <DependentUpon>zoomfactor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sort\autosort.resx">
+      <DependentUpon>autosort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sort\customcomparison.resx">
+      <DependentUpon>customcomparison.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sort\rangesort.resx">
+      <DependentUpon>rangesort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sort\unsortedrows.resx">
+      <DependentUpon>unsortedrows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\backcolor.resx">
+      <DependentUpon>backcolor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\backcolorrotation.resx">
+      <DependentUpon>backcolorrotation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\border.resx">
+      <DependentUpon>border.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\conditionalformat7.resx">
+      <DependentUpon>conditionalformat7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\diagonalline.resx">
+      <DependentUpon>diagonalline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\enhancedborder.resx">
+      <DependentUpon>enhancedborder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\fontsetting.resx">
+      <DependentUpon>fontsetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\formulasparkline.resx">
+      <DependentUpon>formulasparkline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\patterngradient.resx">
+      <DependentUpon>patterngradient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\skin.resx">
+      <DependentUpon>skin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="style\sparkline.resx">
+      <DependentUpon>sparkline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="touch\touchdropdownscale.resx">
+      <DependentUpon>touchdropdownscale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="touch\touchkeyboard.resx">
+      <DependentUpon>touchkeyboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="touch\touchscroll.resx">
+      <DependentUpon>touchscroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="touch\touchselection.resx">
+      <DependentUpon>touchselection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="touch\touchstrip.resx">
+      <DependentUpon>touchstrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainvisual.png" />
+    <None Include="Resources\Common\bg.png" />
+    <None Include="Resources\Common\mescius_logo.png" />
+    <None Include="Resources\Common\menuheader.png" />
+    <None Include="Resources\Common\separator.png" />
+    <None Include="Resources\Common\trialbutton.png" />
+    <None Include="Resources\Common\twittericon.png" />
+    <None Include="Resources\product.ico" />
+    <None Include="Resources\cube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\header_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\header_g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\fotter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SampleData\datapln.xml" />
+    <EmbeddedResource Include="SampleData\datares.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="rowcolcell\sheetcorner.resx">
+      <DependentUpon>sheetcorner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\title.resx">
+      <DependentUpon>title.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleData\datanum3.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SampleData\data.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SampleData\dataconditionalformat.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SampleData\databind.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SampleData\datanum2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SampleData\datanum1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SampleData\data30.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SampleData\data50.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SampleData\dataexcelfilter.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\AutoFill.png" />
+    <EmbeddedResource Include="images\TouchMenuItemDownArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\history.gif" />
+    <EmbeddedResource Include="images\music.gif" />
+    <EmbeddedResource Include="images\science.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SampleData\datanum4.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SampleData\datascroll.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SampleData\Holiday.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="product.ico" />
+    <None Include="Resources\MESCIUS_Logo.png" />
+    <None Include="Resources\logo.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties DocumentXCommentEditorState="&lt;HtmlEditState&gt;&#xA;  &lt;Attributes /&gt;&#xA;&lt;/HtmlEditState&gt;" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
