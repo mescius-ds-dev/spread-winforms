@@ -1,4 +1,6 @@
-﻿Public Class MainForm
+﻿Imports GrapeCity.Spreadsheet
+
+Public Class MainForm
 
     Public Sub New()
 
@@ -39,50 +41,47 @@
         Select Case e.Node.Parent.Text
             Case "新機能"
                 Select Case e.Node.Text
-                    Case "テーブルへのデータバインディング"
-                        Me.setMainPanel(New SpreadWinDemo.tablebinding())
+                    Case "チャートシート"
+                        Me.setMainPanel(New SpreadWinDemo.chartsheet())
                         Exit Select
-                    Case "テーブルの自動拡張"
-                        Me.setMainPanel(New SpreadWinDemo.autotable())
+                    Case "チャートへシェイプの埋め込み"
+                        Me.setMainPanel(New SpreadWinDemo.embeddedshape())
                         Exit Select
-                    Case "数式を使用したスパークライン"
-                        Me.setMainPanel(New SpreadWinDemo.formulasparkline())
+                    Case "チャートの複数項目軸ラベル"
+                        Me.setMainPanel(New SpreadWinDemo.multilabels())
                         Exit Select
-                    Case "拡張カメラシェイプ"
-                        Me.setMainPanel(New SpreadWinDemo.enhancedcamerashape())
+                    Case "複数範囲のコピー＆ペースト"
+                        Me.setMainPanel(New SpreadWinDemo.multirange())
                         Exit Select
-                    Case "Excel互換のショートカットキー"
-                        Me.setMainPanel(New SpreadWinDemo.excelshortcut())
+                    Case "スレッド形式のコメント"
+                        Me.setMainPanel(New SpreadWinDemo.addthreadedcomment())
                         Exit Select
-                    Case "Excelライクなコピー＆ペースト"
-                        Me.setMainPanel(New SpreadWinDemo.richclipboard())
+                    Case "複数シートのコピー"
+                        Me.setMainPanel(New SpreadWinDemo.copysheets())
                         Exit Select
-                    Case "挿入ダイアログ"
-                        Me.setMainPanel(New SpreadWinDemo.insertdialog())
+                    Case "固定線の太さ"
+                        Me.setMainPanel(New SpreadWinDemo.frozenwidth())
                         Exit Select
-                    Case "拡張罫線"
-                        Me.setMainPanel(New SpreadWinDemo.enhancedborder())
+                    Case "選択範囲内で中央"
+                        Me.setMainPanel(New SpreadWinDemo.centeracrossselection())
                         Exit Select
-                    Case "フリーフォーム"
-                        Me.setMainPanel(New SpreadWinDemo.freeform())
+                    Case "テキストから列"
+                        Me.setMainPanel(New SpreadWinDemo.texttocolumns())
                         Exit Select
-                    Case "コメント"
-                        Me.setMainPanel(New SpreadWinDemo.addcomment())
+                    Case "重複データの削除"
+                        Me.setMainPanel(New SpreadWinDemo.removeduplicates())
                         Exit Select
-                    Case "シェイプの頂点の編集"
-                        Me.setMainPanel(New SpreadWinDemo.editshape())
+                    Case "マウスホイールによる水平スクロール"
+                        Me.setMainPanel(New SpreadWinDemo.horizontalmousewheel())
                         Exit Select
-                    Case "数式の表示"
-                        Me.setMainPanel(New SpreadWinDemo.displayformula())
+                    Case "シェイプの3D回転"
+                        Me.setMainPanel(New SpreadWinDemo.add3dshape())
                         Exit Select
-                    Case "固定線の色"
-                        Me.setMainPanel(New SpreadWinDemo.frozenline())
+                    Case "曲線シェイプの入力"
+                        Me.setMainPanel(New SpreadWinDemo.inputcurve())
                         Exit Select
-                    Case "マウスホイールのピクセルスクロール"
-                        Me.setMainPanel(New SpreadWinDemo.mousewheel())
-                        Exit Select
-                    Case "行ヘッダの自動拡張"
-                        Me.setMainPanel(New SpreadWinDemo.rowheaderautowidth())
+                    Case "Excel互換の印刷機能"
+                        Me.setMainPanel(New SpreadWinDemo.excelprint())
                         Exit Select
                 End Select
             Case "行、列、セル、ヘッダ"
@@ -108,6 +107,9 @@
                     Case "セルノート"
                         Me.setMainPanel(New SpreadWinDemo.cellnote())
                         Exit Select
+                    Case "コメント"
+                        Me.setMainPanel(New SpreadWinDemo.addcomment())
+                        Exit Select
                     Case "行、列の非表示"
                         Me.setMainPanel(New SpreadWinDemo.rowvisible())
                         Exit Select
@@ -116,6 +118,9 @@
                         Exit Select
                     Case "行列のドラッグ移動"
                         Me.setMainPanel(New SpreadWinDemo.rowcolmove())
+                        Exit Select
+                    Case "挿入ダイアログ"
+                        Me.setMainPanel(New SpreadWinDemo.insertdialog())
                         Exit Select
                     Case "列フッタ"
                         Me.setMainPanel(New SpreadWinDemo.columnfooter())
@@ -131,6 +136,9 @@
                         Exit Select
                     Case "タイトル、サブタイトル"
                         Me.setMainPanel(New SpreadWinDemo.title())
+                        Exit Select
+                    Case "行ヘッダの自動拡張"
+                        Me.setMainPanel(New SpreadWinDemo.rowheaderautowidth())
                         Exit Select
                 End Select
             Case "シート"
@@ -171,6 +179,9 @@
                     Case "先頭セルの取得"
                         Me.setMainPanel(New SpreadWinDemo.gettoprowcol())
                         Exit Select
+                    Case "Excel互換のショートカットキー"
+                        Me.setMainPanel(New SpreadWinDemo.excelshortcut())
+                        Exit Select
                 End Select
             Case "スタイル"
                 Select Case e.Node.Text
@@ -189,6 +200,9 @@
                     Case "罫線"
                         Me.setMainPanel(New SpreadWinDemo.border())
                         Exit Select
+                    Case "拡張罫線"
+                        Me.setMainPanel(New SpreadWinDemo.enhancedborder())
+                        Exit Select
                     Case "スキン"
                         Me.setMainPanel(New SpreadWinDemo.skin())
                         Exit Select
@@ -197,6 +211,9 @@
                         Exit Select
                     Case "スパークライン"
                         Me.setMainPanel(New SpreadWinDemo.sparkline())
+                        Exit Select
+                    Case "数式を使用したスパークライン"
+                        Me.setMainPanel(New SpreadWinDemo.formulasparkline())
                         Exit Select
                     Case "パターンとグラデーション"
                         Me.setMainPanel(New SpreadWinDemo.patterngradient())
@@ -291,6 +308,9 @@
                     Case "クリップボード"
                         Me.setMainPanel(New SpreadWinDemo.useclipboard())
                         Exit Select
+                    Case "Excelライクなコピー＆ペースト"
+                        Me.setMainPanel(New SpreadWinDemo.richclipboard())
+                        Exit Select
                     Case "オートフィル"
                         Me.setMainPanel(New SpreadWinDemo.dragfill())
                         Exit Select
@@ -338,6 +358,9 @@
                         Exit Select
                     Case "動的配列数式"
                         Me.setMainPanel(New SpreadWinDemo.dynamicarray())
+                        Exit Select
+                    Case "数式の表示"
+                        Me.setMainPanel(New SpreadWinDemo.displayformula())
                         Exit Select
                 End Select
             Case "ソート"
@@ -405,6 +428,9 @@
                     Case "スクロール単位"
                         Me.setMainPanel(New SpreadWinDemo.scrollmode())
                         Exit Select
+                    Case "マウスホイールのピクセルスクロール"
+                        Me.setMainPanel(New SpreadWinDemo.mousewheel())
+                        Exit Select
                     Case "スクロールバーの表示・非表示"
                         Me.setMainPanel(New SpreadWinDemo.scrollbarvisible())
                         Exit Select
@@ -413,6 +439,9 @@
                         Exit Select
                     Case "行・列の固定"
                         Me.setMainPanel(New SpreadWinDemo.frozenrowcol())
+                        Exit Select
+                    Case "固定線の色"
+                        Me.setMainPanel(New SpreadWinDemo.frozenline())
                         Exit Select
                 End Select
             Case "データ連結"
@@ -425,6 +454,12 @@
                         Exit Select
                     Case "特定の列だけを連結"
                         Me.setMainPanel(New SpreadWinDemo.fieldbinding())
+                        Exit Select
+                    Case "テーブルへのデータバインディング"
+                        Me.setMainPanel(New SpreadWinDemo.tablebinding())
+                        Exit Select
+                    Case "テーブルの自動拡張"
+                        Me.setMainPanel(New SpreadWinDemo.autotable())
                         Exit Select
                     Case "行の追加"
                         Me.setMainPanel(New SpreadWinDemo.addrows())
@@ -579,6 +614,21 @@
                     Case "拡張シェイプエンジン"
                         Me.setMainPanel(New SpreadWinDemo.enhancedshape())
                         Exit Select
+                    Case "拡張カメラシェイプ"
+                        Me.setMainPanel(New SpreadWinDemo.enhancedcamerashape())
+                        Exit Select
+                    Case "シェイプの頂点の編集"
+                        Me.setMainPanel(New SpreadWinDemo.editshape())
+                        Exit Select
+                    Case "フリーフォーム"
+                        Me.setMainPanel(New SpreadWinDemo.freeform())
+                        Exit Select
+                End Select
+            Case "サンプル"
+                Select Case e.Node.Text
+                    Case "売上管理"
+                        Me.setMainPanel(New SpreadWinDemo.SalesManagement())
+                        Exit Select
                 End Select
         End Select
     End Sub
@@ -590,23 +640,23 @@
 #Region "ページ移動処理"
     Private Sub setMainPanel(ByVal ucontrol As FirstViewPage)
         ucontrol.Dock = DockStyle.Fill
-        Me.splitContainer1.Panel2.Controls.Add(ucontrol)
-        If Me.splitContainer1.Panel2.Controls.Count > 1 Then
-            Me.splitContainer1.Panel2.Controls.RemoveAt(0)
+        Me.SplitContainer1.Panel2.Controls.Add(ucontrol)
+        If Me.SplitContainer1.Panel2.Controls.Count > 1 Then
+            Me.SplitContainer1.Panel2.Controls.RemoveAt(0)
         End If
     End Sub
     Private Sub setMainPanel(ByVal ucontrol As DemoBase)
         ucontrol.Dock = DockStyle.Fill
-        Me.splitContainer1.Panel2.Controls.Add(ucontrol)
-        If Me.splitContainer1.Panel2.Controls.Count > 1 Then
-            Me.splitContainer1.Panel2.Controls.RemoveAt(0)
+        Me.SplitContainer1.Panel2.Controls.Add(ucontrol)
+        If Me.SplitContainer1.Panel2.Controls.Count > 1 Then
+            Me.SplitContainer1.Panel2.Controls.RemoveAt(0)
         End If
     End Sub
     Private Sub setMainPanel(ByVal ucontrol As DemoBase_settings)
         ucontrol.Dock = DockStyle.Fill
-        Me.splitContainer1.Panel2.Controls.Add(ucontrol)
-        If Me.splitContainer1.Panel2.Controls.Count > 1 Then
-            Me.splitContainer1.Panel2.Controls.RemoveAt(0)
+        Me.SplitContainer1.Panel2.Controls.Add(ucontrol)
+        If Me.SplitContainer1.Panel2.Controls.Count > 1 Then
+            Me.SplitContainer1.Panel2.Controls.RemoveAt(0)
         End If
     End Sub
 #End Region

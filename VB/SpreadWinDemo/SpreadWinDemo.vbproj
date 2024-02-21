@@ -66,18 +66,18 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FarPoint.CalcEngine, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="FarPoint.Excel, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="FarPoint.PDF, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="FarPoint.Win, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="FarPoint.Win.Chart, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="FarPoint.Win.SpreadJ, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
-    <Reference Include="GrapeCity.CalcEngine, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="GrapeCity.Spreadsheet, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="GrapeCity.Spreadsheet.DataVisualization, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
-    <Reference Include="GrapeCity.Spreadsheet.Win, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="GrapeCity.Win.PluginInputMan, Version=15.0.4803.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.CalcEngine, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Excel, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.PDF, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Win, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Win.Chart, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Win.SpreadJ, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.CalcEngine, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="GrapeCity.Spreadsheet, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="GrapeCity.Spreadsheet.DataVisualization, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Spreadsheet.Win, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core">
@@ -143,6 +143,12 @@
     <Compile Include="chart\chartcontrol.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="chart\chartsheet.Designer.vb">
+      <DependentUpon>chartsheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\chartsheet.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="chart\columnchart.Designer.vb">
       <DependentUpon>columnchart.vb</DependentUpon>
     </Compile>
@@ -153,6 +159,12 @@
       <DependentUpon>doughnutchart.vb</DependentUpon>
     </Compile>
     <Compile Include="chart\doughnutchart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\embeddedshape.Designer.vb">
+      <DependentUpon>embeddedshape.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\embeddedshape.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="chart\funnel.Designer.vb">
@@ -177,6 +189,12 @@
       <DependentUpon>linechartstyle.vb</DependentUpon>
     </Compile>
     <Compile Include="chart\linechartstyle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\multilabels.Designer.vb">
+      <DependentUpon>multilabels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chart\multilabels.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="chart\pareto.Designer.vb">
@@ -419,6 +437,18 @@
     <Compile Include="edit\lockedcell.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="edit\multirange.Designer.vb">
+      <DependentUpon>multirange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\multirange.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\removeduplicates.Designer.vb">
+      <DependentUpon>removeduplicates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\removeduplicates.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="edit\richclipboard.Designer.vb">
       <DependentUpon>richclipboard.vb</DependentUpon>
     </Compile>
@@ -429,6 +459,12 @@
       <DependentUpon>search.vb</DependentUpon>
     </Compile>
     <Compile Include="edit\search.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="edit\texttocolumns.Designer.vb">
+      <DependentUpon>texttocolumns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit\texttocolumns.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="edit\useclipboard.Designer.vb">
@@ -628,6 +664,12 @@
     <Compile Include="print\blackwhiteprint.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="print\excelprint.Designer.vb">
+      <DependentUpon>excelprint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="print\excelprint.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="print\ownerprint.Designer.vb">
       <DependentUpon>ownerprint.vb</DependentUpon>
     </Compile>
@@ -676,6 +718,12 @@
     <Compile Include="rowcolcell\addcomment.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="rowcolcell\addthreadedcomment.Designer.vb">
+      <DependentUpon>addthreadedcomment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\addthreadedcomment.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="rowcolcell\cellnote.Designer.vb">
       <DependentUpon>cellnote.vb</DependentUpon>
     </Compile>
@@ -686,6 +734,12 @@
       <DependentUpon>cellspan.vb</DependentUpon>
     </Compile>
     <Compile Include="rowcolcell\cellspan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\centeracrossselection.Designer.vb">
+      <DependentUpon>centeracrossselection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\centeracrossselection.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="rowcolcell\columnfooter.Designer.vb">
@@ -778,6 +832,12 @@
     <Compile Include="rowcolcell\title.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="sample\SalesManagement.Designer.vb">
+      <DependentUpon>SalesManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sample\SalesManagement.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="scroll\cellcontentfloat.Designer.vb">
       <DependentUpon>cellcontentfloat.vb</DependentUpon>
     </Compile>
@@ -794,6 +854,18 @@
       <DependentUpon>frozenrowcol.vb</DependentUpon>
     </Compile>
     <Compile Include="scroll\frozenrowcol.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scroll\frozenwidth.Designer.vb">
+      <DependentUpon>frozenwidth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="scroll\frozenwidth.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="scroll\horizontalmousewheel.Designer.vb">
+      <DependentUpon>horizontalmousewheel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="scroll\horizontalmousewheel.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="scroll\mousewheel.Designer.vb">
@@ -886,6 +958,12 @@
     <Compile Include="selection\selectionstyle.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="shape\add3dshape.Designer.vb">
+      <DependentUpon>add3dshape.vb</DependentUpon>
+    </Compile>
+    <Compile Include="shape\add3dshape.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="shape\addshape.Designer.vb">
       <DependentUpon>addshape.vb</DependentUpon>
     </Compile>
@@ -922,6 +1000,12 @@
     <Compile Include="shape\freeform.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="shape\inputcurve.Designer.vb">
+      <DependentUpon>inputcurve.vb</DependentUpon>
+    </Compile>
+    <Compile Include="shape\inputcurve.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="sheet\addtable.Designer.vb">
       <DependentUpon>addtable.vb</DependentUpon>
     </Compile>
@@ -932,6 +1016,12 @@
       <DependentUpon>autotable.vb</DependentUpon>
     </Compile>
     <Compile Include="sheet\autotable.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sheet\copysheets.Designer.vb">
+      <DependentUpon>copysheets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sheet\copysheets.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="sheet\excelshortcut.Designer.vb">
@@ -1149,11 +1239,17 @@
     <EmbeddedResource Include="chart\chartcontrol.resx">
       <DependentUpon>chartcontrol.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="chart\chartsheet.resx">
+      <DependentUpon>chartsheet.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="chart\columnchart.resx">
       <DependentUpon>columnchart.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="chart\doughnutchart.resx">
       <DependentUpon>doughnutchart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\embeddedshape.resx">
+      <DependentUpon>embeddedshape.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="chart\funnel.resx">
       <DependentUpon>funnel.vb</DependentUpon>
@@ -1166,6 +1262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="chart\linechartstyle.resx">
       <DependentUpon>linechartstyle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart\multilabels.resx">
+      <DependentUpon>multilabels.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="chart\pareto.resx">
       <DependentUpon>pareto.vb</DependentUpon>
@@ -1287,11 +1386,20 @@
     <EmbeddedResource Include="edit\lockedcell.resx">
       <DependentUpon>lockedcell.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="edit\multirange.resx">
+      <DependentUpon>multirange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\removeduplicates.resx">
+      <DependentUpon>removeduplicates.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="edit\richclipboard.resx">
       <DependentUpon>richclipboard.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="edit\search.resx">
       <DependentUpon>search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit\texttocolumns.resx">
+      <DependentUpon>texttocolumns.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="edit\useclipboard.resx">
       <DependentUpon>useclipboard.vb</DependentUpon>
@@ -1390,6 +1498,9 @@
     <EmbeddedResource Include="print\blackwhiteprint.resx">
       <DependentUpon>blackwhiteprint.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="print\excelprint.resx">
+      <DependentUpon>excelprint.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="print\ownerprint.resx">
       <DependentUpon>ownerprint.vb</DependentUpon>
     </EmbeddedResource>
@@ -1414,6 +1525,12 @@
     <EmbeddedResource Include="rowcolcell\addcomment.resx">
       <DependentUpon>addcomment.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\addthreadedcomment.resx">
+      <DependentUpon>addthreadedcomment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\centeracrossselection.resx">
+      <DependentUpon>centeracrossselection.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rowcolcell\dragbandonmoving.resx">
       <DependentUpon>dragbandonmoving.vb</DependentUpon>
     </EmbeddedResource>
@@ -1423,6 +1540,9 @@
     <EmbeddedResource Include="rowcolcell\rowheaderautowidth.resx">
       <DependentUpon>rowheaderautowidth.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="sample\SalesManagement.resx">
+      <DependentUpon>SalesManagement.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="scroll\cellcontentfloat.resx">
       <DependentUpon>cellcontentfloat.vb</DependentUpon>
     </EmbeddedResource>
@@ -1431,6 +1551,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="scroll\frozenrowcol.resx">
       <DependentUpon>frozenrowcol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scroll\frozenwidth.resx">
+      <DependentUpon>frozenwidth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scroll\horizontalmousewheel.resx">
+      <DependentUpon>horizontalmousewheel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="scroll\mousewheel.resx">
       <DependentUpon>mousewheel.vb</DependentUpon>
@@ -1477,6 +1603,9 @@
     <EmbeddedResource Include="selection\selectionstyle.resx">
       <DependentUpon>selectionstyle.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="shape\add3dshape.resx">
+      <DependentUpon>add3dshape.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="shape\addshape.resx">
       <DependentUpon>addshape.vb</DependentUpon>
     </EmbeddedResource>
@@ -1495,11 +1624,17 @@
     <EmbeddedResource Include="shape\freeform.resx">
       <DependentUpon>freeform.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="shape\inputcurve.resx">
+      <DependentUpon>inputcurve.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="sheet\addtable.resx">
       <DependentUpon>addtable.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="sheet\autotable.resx">
       <DependentUpon>autotable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sheet\copysheets.resx">
+      <DependentUpon>copysheets.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="sheet\excelshortcut.resx">
       <DependentUpon>excelshortcut.vb</DependentUpon>
@@ -1610,6 +1745,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="SampleData\店舗売上_××店.xlsx" />
+    <None Include="SampleData\店舗売上_△△店.xlsx" />
+    <None Include="SampleData\店舗売上_◯◯店.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="rowcolcell\cellnote.resx">
