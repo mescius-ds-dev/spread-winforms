@@ -406,6 +406,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.cube = new System.Windows.Forms.PictureBox();
+            this.trial = new System.Windows.Forms.LinkLabel();
             this.firstView = new System.Windows.Forms.LinkLabel();
             this.product_title = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -460,6 +461,7 @@
             // 
             this.splitContainer2.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(25)))), ((int)(((byte)(107)))));
             this.splitContainer2.Panel1.Controls.Add(this.cube);
+            this.splitContainer2.Panel1.Controls.Add(this.trial);
             this.splitContainer2.Panel1.Controls.Add(this.firstView);
             this.splitContainer2.Panel1.Controls.Add(this.product_title);
             this.splitContainer2.Panel1.Controls.Add(this.pictureBox1);
@@ -484,6 +486,24 @@
             this.cube.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cube.TabIndex = 8;
             this.cube.TabStop = false;
+            // 
+            // trial
+            // 
+            this.trial.ActiveLinkColor = System.Drawing.Color.White;
+            this.trial.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.trial.DisabledLinkColor = System.Drawing.Color.White;
+            this.trial.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.trial.Image = global::SpreadWinDemo.Properties.Resources.trialbutton;
+            this.trial.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.trial.LinkColor = System.Drawing.Color.White;
+            this.trial.Location = new System.Drawing.Point(830, 31);
+            this.trial.Name = "trial";
+            this.trial.Size = new System.Drawing.Size(166, 41);
+            this.trial.TabIndex = 2;
+            this.trial.TabStop = true;
+            this.trial.Text = "　　　　　　　　　　　";
+            this.trial.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.trial.VisitedLinkColor = System.Drawing.Color.White;
             // 
             // firstView
             // 
@@ -1272,6 +1292,7 @@
         private System.Windows.Forms.Label product_title;
         private System.Windows.Forms.LinkLabel firstView;
         private System.Windows.Forms.PictureBox cube;
+        private System.Windows.Forms.LinkLabel trial;
         private System.Windows.Forms.Label copyright;
         private System.Windows.Forms.PictureBox mescius_logo;
         private System.Windows.Forms.PictureBox menuheader;

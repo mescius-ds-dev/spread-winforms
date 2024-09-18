@@ -14,7 +14,8 @@ namespace SpreadWinDemo
             this.Load += new EventHandler(MainForm_Load);
             treemenu.AfterSelect += new TreeViewEventHandler(treemenu_AfterSelect);
             treemenu.AfterCollapse += new TreeViewEventHandler(treemenu_AfterCollapse);
-            firstView.LinkClicked += new LinkLabelLinkClickedEventHandler(firstView_LinkClicked);            
+            firstView.LinkClicked += new LinkLabelLinkClickedEventHandler(firstView_LinkClicked);
+            trial.LinkClicked += new LinkLabelLinkClickedEventHandler(trial_LinkClicked);
             searchtext.TextChanged += new EventHandler(searchtext_TextChanged);
             searchlist.SelectedIndexChanged += new EventHandler(searchlist_SelectedIndexChanged);
             myTabControl1.SelectedIndexChanged += new EventHandler(myTabControl1_SelectedIndexChanged);
@@ -31,6 +32,7 @@ namespace SpreadWinDemo
             pictureBox1.Controls.Add(cube);
             pictureBox1.Controls.Add(product_title);
             pictureBox1.Controls.Add(firstView);
+            pictureBox1.Controls.Add(trial);
 
             // フッタ
             pictureBox2.Controls.Add(mescius_logo);
@@ -723,6 +725,15 @@ namespace SpreadWinDemo
             this.setMainPanel(new FirstViewPage());
             treemenu.SelectedNode = null;
             treemenu.CollapseAll();
+        }
+        private void trial_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // トライアル版へのリンク
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+            {
+                UseShellExecute = true,
+                FileName = "https://developer.mescius.jp/download",
+            });
         }
         #endregion
 
