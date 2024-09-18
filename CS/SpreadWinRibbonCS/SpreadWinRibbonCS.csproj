@@ -33,16 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FarPoint.Excel, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="FarPoint.Win, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="FarPoint.Win.Chart, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="FarPoint.Win.SpreadJ, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="GrapeCity.CalcEngine, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="GrapeCity.Spreadsheet, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="GrapeCity.Spreadsheet.Win, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="GrapeCity.Spreadsheet.WinForms.Ribbon, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
-    <Reference Include="GrapeCity.Win.PluginInputMan, Version=17.0.4800.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Excel, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Win, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Win.Chart, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Win.SpreadJ, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.PDF, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="GrapeCity.CalcEngine, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="GrapeCity.Spreadsheet, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="GrapeCity.Spreadsheet.Win, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="GrapeCity.Spreadsheet.WinForms.Ribbon, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
