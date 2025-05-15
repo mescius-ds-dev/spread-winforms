@@ -39,51 +39,6 @@ Public Class MainForm
         End If
 
         Select Case e.Node.Parent.Text
-            Case "新機能"
-                Select Case e.Node.Text
-                    Case "チャートシート"
-                        Me.setMainPanel(New SpreadWinDemo.chartsheet())
-                        Exit Select
-                    Case "チャートへシェイプの埋め込み"
-                        Me.setMainPanel(New SpreadWinDemo.embeddedshape())
-                        Exit Select
-                    Case "チャートの複数項目軸ラベル"
-                        Me.setMainPanel(New SpreadWinDemo.multilabels())
-                        Exit Select
-                    Case "複数範囲のコピー＆ペースト"
-                        Me.setMainPanel(New SpreadWinDemo.multirange())
-                        Exit Select
-                    Case "スレッド形式のコメント"
-                        Me.setMainPanel(New SpreadWinDemo.addthreadedcomment())
-                        Exit Select
-                    Case "複数シートのコピー"
-                        Me.setMainPanel(New SpreadWinDemo.copysheets())
-                        Exit Select
-                    Case "固定線の太さ"
-                        Me.setMainPanel(New SpreadWinDemo.frozenwidth())
-                        Exit Select
-                    Case "選択範囲内で中央"
-                        Me.setMainPanel(New SpreadWinDemo.centeracrossselection())
-                        Exit Select
-                    Case "テキストから列"
-                        Me.setMainPanel(New SpreadWinDemo.texttocolumns())
-                        Exit Select
-                    Case "重複データの削除"
-                        Me.setMainPanel(New SpreadWinDemo.removeduplicates())
-                        Exit Select
-                    Case "マウスホイールによる水平スクロール"
-                        Me.setMainPanel(New SpreadWinDemo.horizontalmousewheel())
-                        Exit Select
-                    Case "シェイプの3D回転"
-                        Me.setMainPanel(New SpreadWinDemo.add3dshape())
-                        Exit Select
-                    Case "曲線シェイプの入力"
-                        Me.setMainPanel(New SpreadWinDemo.inputcurve())
-                        Exit Select
-                    Case "Excel互換の印刷機能"
-                        Me.setMainPanel(New SpreadWinDemo.excelprint())
-                        Exit Select
-                End Select
             Case "行、列、セル、ヘッダ"
                 Select Case e.Node.Text
                     Case "列幅、行高の自動調整"
@@ -101,6 +56,9 @@ Public Class MainForm
                     Case "マージ"
                         Me.setMainPanel(New SpreadWinDemo.rowcolmerge())
                         Exit Select
+                    Case "選択範囲内で中央"
+                        Me.setMainPanel(New SpreadWinDemo.centeracrossselection())
+                        Exit Select
                     Case "テキストチップ"
                         Me.setMainPanel(New SpreadWinDemo.texttip())
                         Exit Select
@@ -109,6 +67,9 @@ Public Class MainForm
                         Exit Select
                     Case "コメント"
                         Me.setMainPanel(New SpreadWinDemo.addcomment())
+                        Exit Select
+                    Case "スレッド形式のコメント"
+                        Me.setMainPanel(New SpreadWinDemo.addthreadedcomment())
                         Exit Select
                     Case "行、列の非表示"
                         Me.setMainPanel(New SpreadWinDemo.rowvisible())
@@ -140,6 +101,9 @@ Public Class MainForm
                     Case "行ヘッダの自動拡張"
                         Me.setMainPanel(New SpreadWinDemo.rowheaderautowidth())
                         Exit Select
+                    Case "コンテキストメニュー"
+                        Me.setMainPanel(New SpreadWinDemo.contextmenu())
+                        Exit Select
                 End Select
             Case "シート"
                 Select Case e.Node.Text
@@ -157,6 +121,9 @@ Public Class MainForm
                         Exit Select
                     Case "マルチシート"
                         Me.setMainPanel(New SpreadWinDemo.multisheet())
+                        Exit Select
+                    Case "複数シートのコピー"
+                        Me.setMainPanel(New SpreadWinDemo.copysheets())
                         Exit Select
                     Case "シートの非表示"
                         Me.setMainPanel(New SpreadWinDemo.sheetvisible())
@@ -311,6 +278,9 @@ Public Class MainForm
                     Case "Excelライクなコピー＆ペースト"
                         Me.setMainPanel(New SpreadWinDemo.richclipboard())
                         Exit Select
+                    Case "複数範囲のコピー＆ペースト"
+                        Me.setMainPanel(New SpreadWinDemo.multirange())
+                        Exit Select
                     Case "オートフィル"
                         Me.setMainPanel(New SpreadWinDemo.dragfill())
                         Exit Select
@@ -328,6 +298,12 @@ Public Class MainForm
                         Exit Select
                     Case "データ検証"
                         Me.setMainPanel(New SpreadWinDemo.datavalidator())
+                        Exit Select
+                    Case "テキストから列"
+                        Me.setMainPanel(New SpreadWinDemo.texttocolumns())
+                        Exit Select
+                    Case "重複データの削除"
+                        Me.setMainPanel(New SpreadWinDemo.removeduplicates())
                         Exit Select
                     Case "数式"
                         Me.setMainPanel(New SpreadWinDemo.formula())
@@ -431,6 +407,9 @@ Public Class MainForm
                     Case "マウスホイールのピクセルスクロール"
                         Me.setMainPanel(New SpreadWinDemo.mousewheel())
                         Exit Select
+                    Case "マウスホイールによる水平スクロール"
+                        Me.setMainPanel(New SpreadWinDemo.horizontalmousewheel())
+                        Exit Select
                     Case "スクロールバーの表示・非表示"
                         Me.setMainPanel(New SpreadWinDemo.scrollbarvisible())
                         Exit Select
@@ -442,6 +421,9 @@ Public Class MainForm
                         Exit Select
                     Case "固定線の色"
                         Me.setMainPanel(New SpreadWinDemo.frozenline())
+                        Exit Select
+                    Case "固定線の太さ"
+                        Me.setMainPanel(New SpreadWinDemo.frozenwidth())
                         Exit Select
                 End Select
             Case "データ連結"
@@ -460,6 +442,9 @@ Public Class MainForm
                         Exit Select
                     Case "テーブルの自動拡張"
                         Me.setMainPanel(New SpreadWinDemo.autotable())
+                        Exit Select
+                    Case "テーブルフィルタの自動更新"
+                        Me.setMainPanel(New SpreadWinDemo.tableautoupdate())
                         Exit Select
                     Case "行の追加"
                         Me.setMainPanel(New SpreadWinDemo.addrows())
@@ -539,6 +524,18 @@ Public Class MainForm
                     Case "ポーラ"
                         Me.setMainPanel(New SpreadWinDemo.polarchart())
                         Exit Select
+                    Case "チャートシート"
+                        Me.setMainPanel(New SpreadWinDemo.chartsheet())
+                        Exit Select
+                    Case "チャートへシェイプの埋め込み"
+                        Me.setMainPanel(New SpreadWinDemo.embeddedshape())
+                        Exit Select
+                    Case "チャートの複数項目軸ラベル"
+                        Me.setMainPanel(New SpreadWinDemo.multilabels())
+                        Exit Select
+                    Case "チャートの誤差範囲"
+                        Me.setMainPanel(New SpreadWinDemo.errorbar())
+                        Exit Select
                 End Select
             Case "印刷"
                 Select Case e.Node.Text
@@ -563,11 +560,17 @@ Public Class MainForm
                     Case "ユーザー定義印刷"
                         Me.setMainPanel(New SpreadWinDemo.ownerprint())
                         Exit Select
+                    Case "Excel互換の印刷機能"
+                        Me.setMainPanel(New SpreadWinDemo.excelprint())
+                        Exit Select
                 End Select
             Case "インポート／エクスポート"
                 Select Case e.Node.Text
                     Case "PDFエクスポート"
                         Me.setMainPanel(New SpreadWinDemo.printpdf())
+                        Exit Select
+                    Case "新しいPDFエクスポート"
+                        Me.setMainPanel(New SpreadWinDemo.pdfexport())
                         Exit Select
                     Case "csv（テキスト）ファイルの読込"
                         Me.setMainPanel(New SpreadWinDemo.opentextfile())
@@ -583,6 +586,9 @@ Public Class MainForm
                         Exit Select
                     Case "Excelファイルの読込と保存（Excel情報の維持）"
                         Me.setMainPanel(New SpreadWinDemo.keepexcelsetting())
+                        Exit Select
+                    Case "XMLデータファイルの読込"
+                        Me.setMainPanel(New SpreadWinDemo.opendataxml())
                         Exit Select
                 End Select
             Case "マルチタッチ機能"
@@ -617,8 +623,14 @@ Public Class MainForm
                     Case "拡張カメラシェイプ"
                         Me.setMainPanel(New SpreadWinDemo.enhancedcamerashape())
                         Exit Select
+                    Case "シェイプの3D回転"
+                        Me.setMainPanel(New SpreadWinDemo.add3dshape())
+                        Exit Select
                     Case "シェイプの頂点の編集"
                         Me.setMainPanel(New SpreadWinDemo.editshape())
+                        Exit Select
+                    Case "曲線シェイプの入力"
+                        Me.setMainPanel(New SpreadWinDemo.inputcurve())
                         Exit Select
                     Case "フリーフォーム"
                         Me.setMainPanel(New SpreadWinDemo.freeform())
