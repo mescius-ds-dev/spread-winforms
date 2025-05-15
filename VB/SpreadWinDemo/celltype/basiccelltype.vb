@@ -181,8 +181,9 @@
 
         ' マルチオプション型セルの設定
         Dim multcell As New FarPoint.Win.Spread.CellType.MultiOptionCellType()
-        multcell.Items = New [String]() {"赤色", "緑色", "青色"}
+        multcell.Items = New [String]() {"レッド", "グリーン", "ブルー"}
         multcell.Orientation = FarPoint.Win.RadioOrientation.Horizontal
+        multcell.Compact = True
         sheet.Cells(7, 3).CellType = multcell
 
         ' プログレス型セルの設定

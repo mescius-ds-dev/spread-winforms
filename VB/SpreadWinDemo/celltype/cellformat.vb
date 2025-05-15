@@ -44,17 +44,17 @@
         ' 桁区切り
         workbook.ActiveSheet.Cells(3, 0).Value = "通貨"
         workbook.ActiveSheet.Cells(3, 1).Value = "桁区切り"
-        workbook.ActiveSheet.Cells(3, 2).NumberFormat = "\#,##0;\-#,##0"
+        workbook.ActiveSheet.Cells(3, 2).NumberFormat = "¥#,##0;¥-#,##0"
         workbook.ActiveSheet.Cells(3, 2).Value = 12345
         ' マイナス
         workbook.ActiveSheet.Range("A4:A5").Merge()
         workbook.ActiveSheet.Cells(4, 1).Value = "マイナスは赤で表示"
-        workbook.ActiveSheet.Cells(4, 2).NumberFormat = "\#,##0;[赤]\-#,##0"
+        workbook.ActiveSheet.Cells(4, 2).NumberFormat = "¥#,##0;[赤]¥-#,##0"
         workbook.ActiveSheet.Cells(4, 2).Value = -12345
 
         ' 会計
         workbook.ActiveSheet.Cells(5, 0).Value = "会計"
-        workbook.ActiveSheet.Cells(5, 2).NumberFormat = "_ \* #,##0_ ;_ \* -#,##0_ ;_ \* "" - \ ""_ ;_ @_ "
+        workbook.ActiveSheet.Cells(5, 2).NumberFormat = "_ ¥* #,##0_ ;_ ¥* -#,##0_ ;_ ¥* "" - ""_ ;_ @_ "
         workbook.ActiveSheet.Cells(5, 2).Value = -12345
 
         ' 日付
