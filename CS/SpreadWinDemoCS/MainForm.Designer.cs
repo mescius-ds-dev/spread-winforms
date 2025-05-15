@@ -28,21 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("チャートシート");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("チャートへシェイプの埋め込み");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("チャートの複数項目軸ラベル");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("複数範囲のコピー＆ペースト");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("スレッド形式のコメント");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("複数シートのコピー");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("固定線の太さ");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("選択範囲内で中央");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("テキストから列");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("重複データの削除");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("マウスホイールによる水平スクロール");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("シェイプの3D回転");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("曲線シェイプの入力");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Excel互換の印刷機能");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("新機能", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("列幅、行高の自動調整");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("行セレクタ");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("行列ドラッグ移動のアニメーション");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("結合");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("マージ");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("選択範囲内で中央");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("テキストチップ");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("セルノート");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("コメント");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("スレッド形式のコメント");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("行、列の非表示");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("行、列のリサイズ");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("行列のドラッグ移動");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("挿入ダイアログ");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("列フッタ");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("ヘッダの非表示");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("マルチヘッダ");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("シートコーナーの分割");
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("タイトル、サブタイトル");
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("行ヘッダの自動拡張");
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("コンテキストメニュー");
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("行、列、セル、ヘッダ", new System.Windows.Forms.TreeNode[] {
             treeNode1,
             treeNode2,
             treeNode3,
@@ -56,33 +63,29 @@
             treeNode11,
             treeNode12,
             treeNode13,
-            treeNode14});
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("列幅、行高の自動調整");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("行セレクタ");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("行列ドラッグ移動のアニメーション");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("結合");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("マージ");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("テキストチップ");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("セルノート");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("コメント");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("行、列の非表示");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("行、列のリサイズ");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("行列のドラッグ移動");
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("挿入ダイアログ");
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("列フッタ");
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("ヘッダの非表示");
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("マルチヘッダ");
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("シートコーナーの分割");
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("タイトル、サブタイトル");
-            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("行ヘッダの自動拡張");
-            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("行、列、セル、ヘッダ", new System.Windows.Forms.TreeNode[] {
+            treeNode14,
+            treeNode15,
             treeNode16,
             treeNode17,
             treeNode18,
             treeNode19,
             treeNode20,
-            treeNode21,
-            treeNode22,
+            treeNode21});
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("ステータスバー");
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("前後のコントロールに移動");
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("テーブル");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("スライサー");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("マルチシート");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("複数シートのコピー");
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("シートの非表示");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("グリッド線");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("ズーム");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("キーボードマップ");
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("アンドゥ・リドゥ");
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("ビューポート");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("先頭セルの取得");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Excel互換のショートカットキー");
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("シート", new System.Windows.Forms.TreeNode[] {
             treeNode23,
             treeNode24,
             treeNode25,
@@ -93,24 +96,22 @@
             treeNode30,
             treeNode31,
             treeNode32,
-            treeNode33});
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("ステータスバー");
-            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("前後のコントロールに移動");
-            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("テーブル");
-            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("スライサー");
-            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("マルチシート");
-            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("シートの非表示");
-            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("グリッド線");
-            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("ズーム");
-            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("キーボードマップ");
-            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("アンドゥ・リドゥ");
-            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("ビューポート");
-            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("先頭セルの取得");
-            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("Excel互換のショートカットキー");
-            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("シート", new System.Windows.Forms.TreeNode[] {
+            treeNode33,
+            treeNode34,
             treeNode35,
-            treeNode36,
-            treeNode37,
+            treeNode36});
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("斜め罫線");
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("背景色の回転");
+            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("フォント");
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("背景色");
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("罫線");
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("拡張罫線");
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("スキン");
+            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("条件付き書式");
+            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("スパークライン");
+            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("数式を使用したスパークライン");
+            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("パターンとグラデーション");
+            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("スタイル", new System.Windows.Forms.TreeNode[] {
             treeNode38,
             treeNode39,
             treeNode40,
@@ -120,20 +121,20 @@
             treeNode44,
             treeNode45,
             treeNode46,
-            treeNode47});
-            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("斜め罫線");
-            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("背景色の回転");
-            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("フォント");
-            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("背景色");
-            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("罫線");
-            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("拡張罫線");
-            System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("スキン");
-            System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("条件付き書式");
-            System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("スパークライン");
-            System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("数式を使用したスパークライン");
-            System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("パターンとグラデーション");
-            System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("スタイル", new System.Windows.Forms.TreeNode[] {
-            treeNode49,
+            treeNode47,
+            treeNode48});
+            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("ヘッダクリック時の選択範囲");
+            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("アクティブセルの色");
+            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("ヘッダのハイライト表示");
+            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("フォーカス枠");
+            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("選択範囲の作成");
+            System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("選択範囲の取得");
+            System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("選択範囲のクリア");
+            System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("選択のスタイル");
+            System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("オペレーションモード");
+            System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("選択のカスタマイズ");
+            System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("セル移動のスキップ");
+            System.Windows.Forms.TreeNode treeNode61 = new System.Windows.Forms.TreeNode("選択", new System.Windows.Forms.TreeNode[] {
             treeNode50,
             treeNode51,
             treeNode52,
@@ -143,23 +144,21 @@
             treeNode56,
             treeNode57,
             treeNode58,
-            treeNode59});
-            System.Windows.Forms.TreeNode treeNode61 = new System.Windows.Forms.TreeNode("ヘッダクリック時の選択範囲");
-            System.Windows.Forms.TreeNode treeNode62 = new System.Windows.Forms.TreeNode("アクティブセルの色");
-            System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("ヘッダのハイライト表示");
-            System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("フォーカス枠");
-            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("選択範囲の作成");
-            System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("選択範囲の取得");
-            System.Windows.Forms.TreeNode treeNode67 = new System.Windows.Forms.TreeNode("選択範囲のクリア");
-            System.Windows.Forms.TreeNode treeNode68 = new System.Windows.Forms.TreeNode("選択のスタイル");
-            System.Windows.Forms.TreeNode treeNode69 = new System.Windows.Forms.TreeNode("オペレーションモード");
-            System.Windows.Forms.TreeNode treeNode70 = new System.Windows.Forms.TreeNode("選択のカスタマイズ");
-            System.Windows.Forms.TreeNode treeNode71 = new System.Windows.Forms.TreeNode("セル移動のスキップ");
-            System.Windows.Forms.TreeNode treeNode72 = new System.Windows.Forms.TreeNode("選択", new System.Windows.Forms.TreeNode[] {
-            treeNode61,
+            treeNode59,
+            treeNode60});
+            System.Windows.Forms.TreeNode treeNode62 = new System.Windows.Forms.TreeNode("セル型");
+            System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("セルの書式設定");
+            System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("セル型", new System.Windows.Forms.TreeNode[] {
             treeNode62,
-            treeNode63,
-            treeNode64,
+            treeNode63});
+            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("コンボボックス");
+            System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("マスク");
+            System.Windows.Forms.TreeNode treeNode67 = new System.Windows.Forms.TreeNode("時間間隔");
+            System.Windows.Forms.TreeNode treeNode68 = new System.Windows.Forms.TreeNode("マス目");
+            System.Windows.Forms.TreeNode treeNode69 = new System.Windows.Forms.TreeNode("テキスト");
+            System.Windows.Forms.TreeNode treeNode70 = new System.Windows.Forms.TreeNode("日付");
+            System.Windows.Forms.TreeNode treeNode71 = new System.Windows.Forms.TreeNode("数値");
+            System.Windows.Forms.TreeNode treeNode72 = new System.Windows.Forms.TreeNode("高度な入力支援（InputManセル）", new System.Windows.Forms.TreeNode[] {
             treeNode65,
             treeNode66,
             treeNode67,
@@ -167,51 +166,45 @@
             treeNode69,
             treeNode70,
             treeNode71});
-            System.Windows.Forms.TreeNode treeNode73 = new System.Windows.Forms.TreeNode("セル型");
-            System.Windows.Forms.TreeNode treeNode74 = new System.Windows.Forms.TreeNode("セルの書式設定");
-            System.Windows.Forms.TreeNode treeNode75 = new System.Windows.Forms.TreeNode("セル型", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode73 = new System.Windows.Forms.TreeNode("非表示の値を無視する集計");
+            System.Windows.Forms.TreeNode treeNode74 = new System.Windows.Forms.TreeNode("IMEモード");
+            System.Windows.Forms.TreeNode treeNode75 = new System.Windows.Forms.TreeNode("常時入力モード");
+            System.Windows.Forms.TreeNode treeNode76 = new System.Windows.Forms.TreeNode("上書き入力");
+            System.Windows.Forms.TreeNode treeNode77 = new System.Windows.Forms.TreeNode("ロック");
+            System.Windows.Forms.TreeNode treeNode78 = new System.Windows.Forms.TreeNode("クリップボード");
+            System.Windows.Forms.TreeNode treeNode79 = new System.Windows.Forms.TreeNode("Excelライクなコピー＆ペースト");
+            System.Windows.Forms.TreeNode treeNode80 = new System.Windows.Forms.TreeNode("複数範囲のコピー＆ペースト");
+            System.Windows.Forms.TreeNode treeNode81 = new System.Windows.Forms.TreeNode("オートフィル");
+            System.Windows.Forms.TreeNode treeNode82 = new System.Windows.Forms.TreeNode("オートフィルメニュー");
+            System.Windows.Forms.TreeNode treeNode83 = new System.Windows.Forms.TreeNode("ドラッグ移動");
+            System.Windows.Forms.TreeNode treeNode84 = new System.Windows.Forms.TreeNode("ドラッグ＆ドロップ");
+            System.Windows.Forms.TreeNode treeNode85 = new System.Windows.Forms.TreeNode("オーバーフロー");
+            System.Windows.Forms.TreeNode treeNode86 = new System.Windows.Forms.TreeNode("データ検証");
+            System.Windows.Forms.TreeNode treeNode87 = new System.Windows.Forms.TreeNode("テキストから列");
+            System.Windows.Forms.TreeNode treeNode88 = new System.Windows.Forms.TreeNode("重複データの削除");
+            System.Windows.Forms.TreeNode treeNode89 = new System.Windows.Forms.TreeNode("数式");
+            System.Windows.Forms.TreeNode treeNode90 = new System.Windows.Forms.TreeNode("別シートセルの数式参照");
+            System.Windows.Forms.TreeNode treeNode91 = new System.Windows.Forms.TreeNode("独自の数式");
+            System.Windows.Forms.TreeNode treeNode92 = new System.Windows.Forms.TreeNode("配列数式");
+            System.Windows.Forms.TreeNode treeNode93 = new System.Windows.Forms.TreeNode("ヘッダ・フッタ上のデータ参照");
+            System.Windows.Forms.TreeNode treeNode94 = new System.Windows.Forms.TreeNode("数式テキストボックス");
+            System.Windows.Forms.TreeNode treeNode95 = new System.Windows.Forms.TreeNode("ゴールシーク");
+            System.Windows.Forms.TreeNode treeNode96 = new System.Windows.Forms.TreeNode("検索");
+            System.Windows.Forms.TreeNode treeNode97 = new System.Windows.Forms.TreeNode("数式のオートフォーマット");
+            System.Windows.Forms.TreeNode treeNode98 = new System.Windows.Forms.TreeNode("動的配列数式");
+            System.Windows.Forms.TreeNode treeNode99 = new System.Windows.Forms.TreeNode("数式の表示");
+            System.Windows.Forms.TreeNode treeNode100 = new System.Windows.Forms.TreeNode("編集", new System.Windows.Forms.TreeNode[] {
             treeNode73,
-            treeNode74});
-            System.Windows.Forms.TreeNode treeNode76 = new System.Windows.Forms.TreeNode("コンボボックス");
-            System.Windows.Forms.TreeNode treeNode77 = new System.Windows.Forms.TreeNode("マスク");
-            System.Windows.Forms.TreeNode treeNode78 = new System.Windows.Forms.TreeNode("時間間隔");
-            System.Windows.Forms.TreeNode treeNode79 = new System.Windows.Forms.TreeNode("マス目");
-            System.Windows.Forms.TreeNode treeNode80 = new System.Windows.Forms.TreeNode("テキスト");
-            System.Windows.Forms.TreeNode treeNode81 = new System.Windows.Forms.TreeNode("日付");
-            System.Windows.Forms.TreeNode treeNode82 = new System.Windows.Forms.TreeNode("数値");
-            System.Windows.Forms.TreeNode treeNode83 = new System.Windows.Forms.TreeNode("高度な入力支援（InputManセル）", new System.Windows.Forms.TreeNode[] {
+            treeNode74,
+            treeNode75,
             treeNode76,
             treeNode77,
             treeNode78,
             treeNode79,
             treeNode80,
             treeNode81,
-            treeNode82});
-            System.Windows.Forms.TreeNode treeNode84 = new System.Windows.Forms.TreeNode("非表示の値を無視する集計");
-            System.Windows.Forms.TreeNode treeNode85 = new System.Windows.Forms.TreeNode("IMEモード");
-            System.Windows.Forms.TreeNode treeNode86 = new System.Windows.Forms.TreeNode("常時入力モード");
-            System.Windows.Forms.TreeNode treeNode87 = new System.Windows.Forms.TreeNode("上書き入力");
-            System.Windows.Forms.TreeNode treeNode88 = new System.Windows.Forms.TreeNode("ロック");
-            System.Windows.Forms.TreeNode treeNode89 = new System.Windows.Forms.TreeNode("クリップボード");
-            System.Windows.Forms.TreeNode treeNode90 = new System.Windows.Forms.TreeNode("Excelライクなコピー＆ペースト");
-            System.Windows.Forms.TreeNode treeNode91 = new System.Windows.Forms.TreeNode("オートフィル");
-            System.Windows.Forms.TreeNode treeNode92 = new System.Windows.Forms.TreeNode("オートフィルメニュー");
-            System.Windows.Forms.TreeNode treeNode93 = new System.Windows.Forms.TreeNode("ドラッグ移動");
-            System.Windows.Forms.TreeNode treeNode94 = new System.Windows.Forms.TreeNode("ドラッグ＆ドロップ");
-            System.Windows.Forms.TreeNode treeNode95 = new System.Windows.Forms.TreeNode("オーバーフロー");
-            System.Windows.Forms.TreeNode treeNode96 = new System.Windows.Forms.TreeNode("データ検証");
-            System.Windows.Forms.TreeNode treeNode97 = new System.Windows.Forms.TreeNode("数式");
-            System.Windows.Forms.TreeNode treeNode98 = new System.Windows.Forms.TreeNode("別シートセルの数式参照");
-            System.Windows.Forms.TreeNode treeNode99 = new System.Windows.Forms.TreeNode("独自の数式");
-            System.Windows.Forms.TreeNode treeNode100 = new System.Windows.Forms.TreeNode("配列数式");
-            System.Windows.Forms.TreeNode treeNode101 = new System.Windows.Forms.TreeNode("ヘッダ・フッタ上のデータ参照");
-            System.Windows.Forms.TreeNode treeNode102 = new System.Windows.Forms.TreeNode("数式テキストボックス");
-            System.Windows.Forms.TreeNode treeNode103 = new System.Windows.Forms.TreeNode("ゴールシーク");
-            System.Windows.Forms.TreeNode treeNode104 = new System.Windows.Forms.TreeNode("検索");
-            System.Windows.Forms.TreeNode treeNode105 = new System.Windows.Forms.TreeNode("数式のオートフォーマット");
-            System.Windows.Forms.TreeNode treeNode106 = new System.Windows.Forms.TreeNode("動的配列数式");
-            System.Windows.Forms.TreeNode treeNode107 = new System.Windows.Forms.TreeNode("数式の表示");
-            System.Windows.Forms.TreeNode treeNode108 = new System.Windows.Forms.TreeNode("編集", new System.Windows.Forms.TreeNode[] {
+            treeNode82,
+            treeNode83,
             treeNode84,
             treeNode85,
             treeNode86,
@@ -227,106 +220,113 @@
             treeNode96,
             treeNode97,
             treeNode98,
-            treeNode99,
-            treeNode100,
+            treeNode99});
+            System.Windows.Forms.TreeNode treeNode101 = new System.Windows.Forms.TreeNode("自動ソート");
+            System.Windows.Forms.TreeNode treeNode102 = new System.Windows.Forms.TreeNode("固定行を除いたソート");
+            System.Windows.Forms.TreeNode treeNode103 = new System.Windows.Forms.TreeNode("セル範囲のソート");
+            System.Windows.Forms.TreeNode treeNode104 = new System.Windows.Forms.TreeNode("独自のソートロジックでソート");
+            System.Windows.Forms.TreeNode treeNode105 = new System.Windows.Forms.TreeNode("ソート", new System.Windows.Forms.TreeNode[] {
             treeNode101,
             treeNode102,
             treeNode103,
-            treeNode104,
-            treeNode105,
+            treeNode104});
+            System.Windows.Forms.TreeNode treeNode106 = new System.Windows.Forms.TreeNode("ドロップダウンメニューからソート");
+            System.Windows.Forms.TreeNode treeNode107 = new System.Windows.Forms.TreeNode("フィルタリングの自動実行");
+            System.Windows.Forms.TreeNode treeNode108 = new System.Windows.Forms.TreeNode("非表示フィルタ");
+            System.Windows.Forms.TreeNode treeNode109 = new System.Windows.Forms.TreeNode("スタイルフィルタ");
+            System.Windows.Forms.TreeNode treeNode110 = new System.Windows.Forms.TreeNode("カスタムフィルタ");
+            System.Windows.Forms.TreeNode treeNode111 = new System.Windows.Forms.TreeNode("条件フィルタ");
+            System.Windows.Forms.TreeNode treeNode112 = new System.Windows.Forms.TreeNode("Excelフィルタリング");
+            System.Windows.Forms.TreeNode treeNode113 = new System.Windows.Forms.TreeNode("非フィルタリング行");
+            System.Windows.Forms.TreeNode treeNode114 = new System.Windows.Forms.TreeNode("セル範囲のフィルタリング");
+            System.Windows.Forms.TreeNode treeNode115 = new System.Windows.Forms.TreeNode("フィルタリング", new System.Windows.Forms.TreeNode[] {
             treeNode106,
-            treeNode107});
-            System.Windows.Forms.TreeNode treeNode109 = new System.Windows.Forms.TreeNode("自動ソート");
-            System.Windows.Forms.TreeNode treeNode110 = new System.Windows.Forms.TreeNode("固定行を除いたソート");
-            System.Windows.Forms.TreeNode treeNode111 = new System.Windows.Forms.TreeNode("セル範囲のソート");
-            System.Windows.Forms.TreeNode treeNode112 = new System.Windows.Forms.TreeNode("独自のソートロジックでソート");
-            System.Windows.Forms.TreeNode treeNode113 = new System.Windows.Forms.TreeNode("ソート", new System.Windows.Forms.TreeNode[] {
+            treeNode107,
+            treeNode108,
             treeNode109,
             treeNode110,
             treeNode111,
-            treeNode112});
-            System.Windows.Forms.TreeNode treeNode114 = new System.Windows.Forms.TreeNode("ドロップダウンメニューからソート");
-            System.Windows.Forms.TreeNode treeNode115 = new System.Windows.Forms.TreeNode("フィルタリングの自動実行");
-            System.Windows.Forms.TreeNode treeNode116 = new System.Windows.Forms.TreeNode("非表示フィルタ");
-            System.Windows.Forms.TreeNode treeNode117 = new System.Windows.Forms.TreeNode("スタイルフィルタ");
-            System.Windows.Forms.TreeNode treeNode118 = new System.Windows.Forms.TreeNode("カスタムフィルタ");
-            System.Windows.Forms.TreeNode treeNode119 = new System.Windows.Forms.TreeNode("条件フィルタ");
-            System.Windows.Forms.TreeNode treeNode120 = new System.Windows.Forms.TreeNode("Excelフィルタリング");
-            System.Windows.Forms.TreeNode treeNode121 = new System.Windows.Forms.TreeNode("非フィルタリング行");
-            System.Windows.Forms.TreeNode treeNode122 = new System.Windows.Forms.TreeNode("セル範囲のフィルタリング");
-            System.Windows.Forms.TreeNode treeNode123 = new System.Windows.Forms.TreeNode("フィルタリング", new System.Windows.Forms.TreeNode[] {
-            treeNode114,
-            treeNode115,
+            treeNode112,
+            treeNode113,
+            treeNode114});
+            System.Windows.Forms.TreeNode treeNode116 = new System.Windows.Forms.TreeNode("アウトラインのボタン位置");
+            System.Windows.Forms.TreeNode treeNode117 = new System.Windows.Forms.TreeNode("Outlookスタイルグループ化");
+            System.Windows.Forms.TreeNode treeNode118 = new System.Windows.Forms.TreeNode("アウトライン");
+            System.Windows.Forms.TreeNode treeNode119 = new System.Windows.Forms.TreeNode("グループ化", new System.Windows.Forms.TreeNode[] {
             treeNode116,
             treeNode117,
-            treeNode118,
-            treeNode119,
+            treeNode118});
+            System.Windows.Forms.TreeNode treeNode120 = new System.Windows.Forms.TreeNode("テキスト位置の自動調整");
+            System.Windows.Forms.TreeNode treeNode121 = new System.Windows.Forms.TreeNode("スクロール単位");
+            System.Windows.Forms.TreeNode treeNode122 = new System.Windows.Forms.TreeNode("マウスホイールのピクセルスクロール");
+            System.Windows.Forms.TreeNode treeNode123 = new System.Windows.Forms.TreeNode("マウスホイールによる水平スクロール");
+            System.Windows.Forms.TreeNode treeNode124 = new System.Windows.Forms.TreeNode("スクロールバーの表示・非表示");
+            System.Windows.Forms.TreeNode treeNode125 = new System.Windows.Forms.TreeNode("遅延スクロール");
+            System.Windows.Forms.TreeNode treeNode126 = new System.Windows.Forms.TreeNode("行・列の固定");
+            System.Windows.Forms.TreeNode treeNode127 = new System.Windows.Forms.TreeNode("固定線の色");
+            System.Windows.Forms.TreeNode treeNode128 = new System.Windows.Forms.TreeNode("固定線の太さ");
+            System.Windows.Forms.TreeNode treeNode129 = new System.Windows.Forms.TreeNode("スクロール", new System.Windows.Forms.TreeNode[] {
             treeNode120,
             treeNode121,
-            treeNode122});
-            System.Windows.Forms.TreeNode treeNode124 = new System.Windows.Forms.TreeNode("アウトラインのボタン位置");
-            System.Windows.Forms.TreeNode treeNode125 = new System.Windows.Forms.TreeNode("Outlookスタイルグループ化");
-            System.Windows.Forms.TreeNode treeNode126 = new System.Windows.Forms.TreeNode("アウトライン");
-            System.Windows.Forms.TreeNode treeNode127 = new System.Windows.Forms.TreeNode("グループ化", new System.Windows.Forms.TreeNode[] {
+            treeNode122,
+            treeNode123,
             treeNode124,
             treeNode125,
-            treeNode126});
-            System.Windows.Forms.TreeNode treeNode128 = new System.Windows.Forms.TreeNode("テキスト位置の自動調整");
-            System.Windows.Forms.TreeNode treeNode129 = new System.Windows.Forms.TreeNode("スクロール単位");
-            System.Windows.Forms.TreeNode treeNode130 = new System.Windows.Forms.TreeNode("マウスホイールのピクセルスクロール");
-            System.Windows.Forms.TreeNode treeNode131 = new System.Windows.Forms.TreeNode("スクロールバーの表示・非表示");
-            System.Windows.Forms.TreeNode treeNode132 = new System.Windows.Forms.TreeNode("遅延スクロール");
-            System.Windows.Forms.TreeNode treeNode133 = new System.Windows.Forms.TreeNode("行・列の固定");
-            System.Windows.Forms.TreeNode treeNode134 = new System.Windows.Forms.TreeNode("固定線の色");
-            System.Windows.Forms.TreeNode treeNode135 = new System.Windows.Forms.TreeNode("スクロール", new System.Windows.Forms.TreeNode[] {
-            treeNode128,
-            treeNode129,
+            treeNode126,
+            treeNode127,
+            treeNode128});
+            System.Windows.Forms.TreeNode treeNode130 = new System.Windows.Forms.TreeNode("バウンドデータ");
+            System.Windows.Forms.TreeNode treeNode131 = new System.Windows.Forms.TreeNode("アンバウンドデータ");
+            System.Windows.Forms.TreeNode treeNode132 = new System.Windows.Forms.TreeNode("特定の列だけを連結");
+            System.Windows.Forms.TreeNode treeNode133 = new System.Windows.Forms.TreeNode("テーブルへのデータバインディング");
+            System.Windows.Forms.TreeNode treeNode134 = new System.Windows.Forms.TreeNode("テーブルの自動拡張");
+            System.Windows.Forms.TreeNode treeNode135 = new System.Windows.Forms.TreeNode("テーブルフィルタの自動更新");
+            System.Windows.Forms.TreeNode treeNode136 = new System.Windows.Forms.TreeNode("行の追加");
+            System.Windows.Forms.TreeNode treeNode137 = new System.Windows.Forms.TreeNode("行の削除");
+            System.Windows.Forms.TreeNode treeNode138 = new System.Windows.Forms.TreeNode("新規行");
+            System.Windows.Forms.TreeNode treeNode139 = new System.Windows.Forms.TreeNode("階層表示");
+            System.Windows.Forms.TreeNode treeNode140 = new System.Windows.Forms.TreeNode("データ連結", new System.Windows.Forms.TreeNode[] {
             treeNode130,
             treeNode131,
             treeNode132,
             treeNode133,
-            treeNode134});
-            System.Windows.Forms.TreeNode treeNode136 = new System.Windows.Forms.TreeNode("バウンドデータ");
-            System.Windows.Forms.TreeNode treeNode137 = new System.Windows.Forms.TreeNode("アンバウンドデータ");
-            System.Windows.Forms.TreeNode treeNode138 = new System.Windows.Forms.TreeNode("特定の列だけを連結");
-            System.Windows.Forms.TreeNode treeNode139 = new System.Windows.Forms.TreeNode("テーブルへのデータバインディング");
-            System.Windows.Forms.TreeNode treeNode140 = new System.Windows.Forms.TreeNode("テーブルの自動拡張");
-            System.Windows.Forms.TreeNode treeNode141 = new System.Windows.Forms.TreeNode("行の追加");
-            System.Windows.Forms.TreeNode treeNode142 = new System.Windows.Forms.TreeNode("行の削除");
-            System.Windows.Forms.TreeNode treeNode143 = new System.Windows.Forms.TreeNode("新規行");
-            System.Windows.Forms.TreeNode treeNode144 = new System.Windows.Forms.TreeNode("階層表示");
-            System.Windows.Forms.TreeNode treeNode145 = new System.Windows.Forms.TreeNode("データ連結", new System.Windows.Forms.TreeNode[] {
+            treeNode134,
+            treeNode135,
             treeNode136,
             treeNode137,
             treeNode138,
-            treeNode139,
-            treeNode140,
+            treeNode139});
+            System.Windows.Forms.TreeNode treeNode141 = new System.Windows.Forms.TreeNode("チャートコントロール");
+            System.Windows.Forms.TreeNode treeNode142 = new System.Windows.Forms.TreeNode("ツリーマップ");
+            System.Windows.Forms.TreeNode treeNode143 = new System.Windows.Forms.TreeNode("サンバースト");
+            System.Windows.Forms.TreeNode treeNode144 = new System.Windows.Forms.TreeNode("ヒストグラム");
+            System.Windows.Forms.TreeNode treeNode145 = new System.Windows.Forms.TreeNode("パレート図");
+            System.Windows.Forms.TreeNode treeNode146 = new System.Windows.Forms.TreeNode("箱ひげ図");
+            System.Windows.Forms.TreeNode treeNode147 = new System.Windows.Forms.TreeNode("ウォーターフォール");
+            System.Windows.Forms.TreeNode treeNode148 = new System.Windows.Forms.TreeNode("じょうご");
+            System.Windows.Forms.TreeNode treeNode149 = new System.Windows.Forms.TreeNode("折れ線チャートの線種");
+            System.Windows.Forms.TreeNode treeNode150 = new System.Windows.Forms.TreeNode("縦棒");
+            System.Windows.Forms.TreeNode treeNode151 = new System.Windows.Forms.TreeNode("折れ線");
+            System.Windows.Forms.TreeNode treeNode152 = new System.Windows.Forms.TreeNode("円");
+            System.Windows.Forms.TreeNode treeNode153 = new System.Windows.Forms.TreeNode("横棒");
+            System.Windows.Forms.TreeNode treeNode154 = new System.Windows.Forms.TreeNode("面");
+            System.Windows.Forms.TreeNode treeNode155 = new System.Windows.Forms.TreeNode("散布図");
+            System.Windows.Forms.TreeNode treeNode156 = new System.Windows.Forms.TreeNode("バブル");
+            System.Windows.Forms.TreeNode treeNode157 = new System.Windows.Forms.TreeNode("株価");
+            System.Windows.Forms.TreeNode treeNode158 = new System.Windows.Forms.TreeNode("XYZ散布図");
+            System.Windows.Forms.TreeNode treeNode159 = new System.Windows.Forms.TreeNode("ドーナツ");
+            System.Windows.Forms.TreeNode treeNode160 = new System.Windows.Forms.TreeNode("レーダー");
+            System.Windows.Forms.TreeNode treeNode161 = new System.Windows.Forms.TreeNode("ポーラ");
+            System.Windows.Forms.TreeNode treeNode162 = new System.Windows.Forms.TreeNode("チャートシート");
+            System.Windows.Forms.TreeNode treeNode163 = new System.Windows.Forms.TreeNode("チャートへシェイプの埋め込み");
+            System.Windows.Forms.TreeNode treeNode164 = new System.Windows.Forms.TreeNode("チャートの複数項目軸ラベル");
+            System.Windows.Forms.TreeNode treeNode165 = new System.Windows.Forms.TreeNode("チャートの誤差範囲");
+            System.Windows.Forms.TreeNode treeNode166 = new System.Windows.Forms.TreeNode("チャート", new System.Windows.Forms.TreeNode[] {
             treeNode141,
             treeNode142,
             treeNode143,
-            treeNode144});
-            System.Windows.Forms.TreeNode treeNode146 = new System.Windows.Forms.TreeNode("チャートコントロール");
-            System.Windows.Forms.TreeNode treeNode147 = new System.Windows.Forms.TreeNode("ツリーマップ");
-            System.Windows.Forms.TreeNode treeNode148 = new System.Windows.Forms.TreeNode("サンバースト");
-            System.Windows.Forms.TreeNode treeNode149 = new System.Windows.Forms.TreeNode("ヒストグラム");
-            System.Windows.Forms.TreeNode treeNode150 = new System.Windows.Forms.TreeNode("パレート図");
-            System.Windows.Forms.TreeNode treeNode151 = new System.Windows.Forms.TreeNode("箱ひげ図");
-            System.Windows.Forms.TreeNode treeNode152 = new System.Windows.Forms.TreeNode("ウォーターフォール");
-            System.Windows.Forms.TreeNode treeNode153 = new System.Windows.Forms.TreeNode("じょうご");
-            System.Windows.Forms.TreeNode treeNode154 = new System.Windows.Forms.TreeNode("折れ線チャートの線種");
-            System.Windows.Forms.TreeNode treeNode155 = new System.Windows.Forms.TreeNode("縦棒");
-            System.Windows.Forms.TreeNode treeNode156 = new System.Windows.Forms.TreeNode("折れ線");
-            System.Windows.Forms.TreeNode treeNode157 = new System.Windows.Forms.TreeNode("円");
-            System.Windows.Forms.TreeNode treeNode158 = new System.Windows.Forms.TreeNode("横棒");
-            System.Windows.Forms.TreeNode treeNode159 = new System.Windows.Forms.TreeNode("面");
-            System.Windows.Forms.TreeNode treeNode160 = new System.Windows.Forms.TreeNode("散布図");
-            System.Windows.Forms.TreeNode treeNode161 = new System.Windows.Forms.TreeNode("バブル");
-            System.Windows.Forms.TreeNode treeNode162 = new System.Windows.Forms.TreeNode("株価");
-            System.Windows.Forms.TreeNode treeNode163 = new System.Windows.Forms.TreeNode("XYZ散布図");
-            System.Windows.Forms.TreeNode treeNode164 = new System.Windows.Forms.TreeNode("ドーナツ");
-            System.Windows.Forms.TreeNode treeNode165 = new System.Windows.Forms.TreeNode("レーダー");
-            System.Windows.Forms.TreeNode treeNode166 = new System.Windows.Forms.TreeNode("ポーラ");
-            System.Windows.Forms.TreeNode treeNode167 = new System.Windows.Forms.TreeNode("チャート", new System.Windows.Forms.TreeNode[] {
+            treeNode144,
+            treeNode145,
             treeNode146,
             treeNode147,
             treeNode148,
@@ -346,16 +346,17 @@
             treeNode162,
             treeNode163,
             treeNode164,
-            treeNode165,
-            treeNode166});
-            System.Windows.Forms.TreeNode treeNode168 = new System.Windows.Forms.TreeNode("白黒印刷");
-            System.Windows.Forms.TreeNode treeNode169 = new System.Windows.Forms.TreeNode("印刷");
-            System.Windows.Forms.TreeNode treeNode170 = new System.Windows.Forms.TreeNode("両面印刷");
-            System.Windows.Forms.TreeNode treeNode171 = new System.Windows.Forms.TreeNode("印刷プレビュー");
-            System.Windows.Forms.TreeNode treeNode172 = new System.Windows.Forms.TreeNode("Excelライクプレビュー");
-            System.Windows.Forms.TreeNode treeNode173 = new System.Windows.Forms.TreeNode("印刷ページ設定");
-            System.Windows.Forms.TreeNode treeNode174 = new System.Windows.Forms.TreeNode("ユーザー定義印刷");
+            treeNode165});
+            System.Windows.Forms.TreeNode treeNode167 = new System.Windows.Forms.TreeNode("白黒印刷");
+            System.Windows.Forms.TreeNode treeNode168 = new System.Windows.Forms.TreeNode("印刷");
+            System.Windows.Forms.TreeNode treeNode169 = new System.Windows.Forms.TreeNode("両面印刷");
+            System.Windows.Forms.TreeNode treeNode170 = new System.Windows.Forms.TreeNode("印刷プレビュー");
+            System.Windows.Forms.TreeNode treeNode171 = new System.Windows.Forms.TreeNode("Excelライクプレビュー");
+            System.Windows.Forms.TreeNode treeNode172 = new System.Windows.Forms.TreeNode("印刷ページ設定");
+            System.Windows.Forms.TreeNode treeNode173 = new System.Windows.Forms.TreeNode("ユーザー定義印刷");
+            System.Windows.Forms.TreeNode treeNode174 = new System.Windows.Forms.TreeNode("Excel互換の印刷機能");
             System.Windows.Forms.TreeNode treeNode175 = new System.Windows.Forms.TreeNode("印刷", new System.Windows.Forms.TreeNode[] {
+            treeNode167,
             treeNode168,
             treeNode169,
             treeNode170,
@@ -364,45 +365,53 @@
             treeNode173,
             treeNode174});
             System.Windows.Forms.TreeNode treeNode176 = new System.Windows.Forms.TreeNode("PDFエクスポート");
-            System.Windows.Forms.TreeNode treeNode177 = new System.Windows.Forms.TreeNode("csv（テキスト）ファイルの読込");
-            System.Windows.Forms.TreeNode treeNode178 = new System.Windows.Forms.TreeNode("csv（テキスト）ファイルへ保存");
-            System.Windows.Forms.TreeNode treeNode179 = new System.Windows.Forms.TreeNode("Excelファイルの読込");
-            System.Windows.Forms.TreeNode treeNode180 = new System.Windows.Forms.TreeNode("Excelファイルへ保存");
-            System.Windows.Forms.TreeNode treeNode181 = new System.Windows.Forms.TreeNode("Excelファイルの読込と保存（Excel情報の維持）");
-            System.Windows.Forms.TreeNode treeNode182 = new System.Windows.Forms.TreeNode("インポート／エクスポート", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode177 = new System.Windows.Forms.TreeNode("新しいPDFエクスポート");
+            System.Windows.Forms.TreeNode treeNode178 = new System.Windows.Forms.TreeNode("csv（テキスト）ファイルの読込");
+            System.Windows.Forms.TreeNode treeNode179 = new System.Windows.Forms.TreeNode("csv（テキスト）ファイルへ保存");
+            System.Windows.Forms.TreeNode treeNode180 = new System.Windows.Forms.TreeNode("Excelファイルの読込");
+            System.Windows.Forms.TreeNode treeNode181 = new System.Windows.Forms.TreeNode("Excelファイルへ保存");
+            System.Windows.Forms.TreeNode treeNode182 = new System.Windows.Forms.TreeNode("Excelファイルの読込と保存（Excel情報の維持）");
+            System.Windows.Forms.TreeNode treeNode183 = new System.Windows.Forms.TreeNode("XMLデータファイルの読込");
+            System.Windows.Forms.TreeNode treeNode184 = new System.Windows.Forms.TreeNode("インポート／エクスポート", new System.Windows.Forms.TreeNode[] {
             treeNode176,
             treeNode177,
             treeNode178,
             treeNode179,
             treeNode180,
-            treeNode181});
-            System.Windows.Forms.TreeNode treeNode183 = new System.Windows.Forms.TreeNode("タッチツールバー");
-            System.Windows.Forms.TreeNode treeNode184 = new System.Windows.Forms.TreeNode("選択グリッパー");
-            System.Windows.Forms.TreeNode treeNode185 = new System.Windows.Forms.TreeNode("タッチスクロール");
-            System.Windows.Forms.TreeNode treeNode186 = new System.Windows.Forms.TreeNode("ドロップダウンリストの拡大表示");
-            System.Windows.Forms.TreeNode treeNode187 = new System.Windows.Forms.TreeNode("タッチキーボード");
-            System.Windows.Forms.TreeNode treeNode188 = new System.Windows.Forms.TreeNode("マルチタッチ機能", new System.Windows.Forms.TreeNode[] {
-            treeNode183,
-            treeNode184,
+            treeNode181,
+            treeNode182,
+            treeNode183});
+            System.Windows.Forms.TreeNode treeNode185 = new System.Windows.Forms.TreeNode("タッチツールバー");
+            System.Windows.Forms.TreeNode treeNode186 = new System.Windows.Forms.TreeNode("選択グリッパー");
+            System.Windows.Forms.TreeNode treeNode187 = new System.Windows.Forms.TreeNode("タッチスクロール");
+            System.Windows.Forms.TreeNode treeNode188 = new System.Windows.Forms.TreeNode("ドロップダウンリストの拡大表示");
+            System.Windows.Forms.TreeNode treeNode189 = new System.Windows.Forms.TreeNode("タッチキーボード");
+            System.Windows.Forms.TreeNode treeNode190 = new System.Windows.Forms.TreeNode("マルチタッチ機能", new System.Windows.Forms.TreeNode[] {
             treeNode185,
             treeNode186,
-            treeNode187});
-            System.Windows.Forms.TreeNode treeNode189 = new System.Windows.Forms.TreeNode("シェイプ");
-            System.Windows.Forms.TreeNode treeNode190 = new System.Windows.Forms.TreeNode("カメラシェイプ");
-            System.Windows.Forms.TreeNode treeNode191 = new System.Windows.Forms.TreeNode("拡張シェイプエンジン");
-            System.Windows.Forms.TreeNode treeNode192 = new System.Windows.Forms.TreeNode("拡張カメラシェイプ");
-            System.Windows.Forms.TreeNode treeNode193 = new System.Windows.Forms.TreeNode("シェイプの頂点の編集");
-            System.Windows.Forms.TreeNode treeNode194 = new System.Windows.Forms.TreeNode("フリーフォーム");
-            System.Windows.Forms.TreeNode treeNode195 = new System.Windows.Forms.TreeNode("シェイプオブジェクト", new System.Windows.Forms.TreeNode[] {
-            treeNode189,
-            treeNode190,
+            treeNode187,
+            treeNode188,
+            treeNode189});
+            System.Windows.Forms.TreeNode treeNode191 = new System.Windows.Forms.TreeNode("シェイプ");
+            System.Windows.Forms.TreeNode treeNode192 = new System.Windows.Forms.TreeNode("カメラシェイプ");
+            System.Windows.Forms.TreeNode treeNode193 = new System.Windows.Forms.TreeNode("拡張シェイプエンジン");
+            System.Windows.Forms.TreeNode treeNode194 = new System.Windows.Forms.TreeNode("拡張カメラシェイプ");
+            System.Windows.Forms.TreeNode treeNode195 = new System.Windows.Forms.TreeNode("シェイプの3D回転");
+            System.Windows.Forms.TreeNode treeNode196 = new System.Windows.Forms.TreeNode("シェイプの頂点の編集");
+            System.Windows.Forms.TreeNode treeNode197 = new System.Windows.Forms.TreeNode("曲線シェイプの入力");
+            System.Windows.Forms.TreeNode treeNode198 = new System.Windows.Forms.TreeNode("フリーフォーム");
+            System.Windows.Forms.TreeNode treeNode199 = new System.Windows.Forms.TreeNode("シェイプオブジェクト", new System.Windows.Forms.TreeNode[] {
             treeNode191,
             treeNode192,
             treeNode193,
-            treeNode194});
-            System.Windows.Forms.TreeNode treeNode196 = new System.Windows.Forms.TreeNode("売上管理");
-            System.Windows.Forms.TreeNode treeNode197 = new System.Windows.Forms.TreeNode("サンプル", new System.Windows.Forms.TreeNode[] {
-            treeNode196});
+            treeNode194,
+            treeNode195,
+            treeNode196,
+            treeNode197,
+            treeNode198});
+            System.Windows.Forms.TreeNode treeNode200 = new System.Windows.Forms.TreeNode("売上管理");
+            System.Windows.Forms.TreeNode treeNode201 = new System.Windows.Forms.TreeNode("サンプル", new System.Windows.Forms.TreeNode[] {
+            treeNode200});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.cube = new System.Windows.Forms.PictureBox();
@@ -639,519 +648,526 @@
             this.treemenu.Location = new System.Drawing.Point(3, 3);
             this.treemenu.Name = "treemenu";
             treeNode1.Name = "ノード0";
-            treeNode1.Text = "チャートシート";
-            treeNode2.Name = "ノード1";
-            treeNode2.Text = "チャートへシェイプの埋め込み";
-            treeNode3.Name = "ノード2";
-            treeNode3.Text = "チャートの複数項目軸ラベル";
-            treeNode4.Name = "ノード5";
-            treeNode4.Text = "複数範囲のコピー＆ペースト";
-            treeNode5.Name = "ノード3";
-            treeNode5.Text = "スレッド形式のコメント";
-            treeNode6.Name = "ノード7";
-            treeNode6.Text = "複数シートのコピー";
-            treeNode7.Name = "ノード10";
-            treeNode7.Text = "固定線の太さ";
-            treeNode8.Name = "ノード9";
-            treeNode8.Text = "選択範囲内で中央";
-            treeNode9.Name = "ノード8";
-            treeNode9.Text = "テキストから列";
-            treeNode10.Name = "ノード11";
-            treeNode10.Text = "重複データの削除";
+            treeNode1.Text = "列幅、行高の自動調整";
+            treeNode2.Name = "ノード0";
+            treeNode2.Tag = "セレクタ";
+            treeNode2.Text = "行セレクタ";
+            treeNode3.Name = "ノード0";
+            treeNode3.Tag = "移動";
+            treeNode3.Text = "行列ドラッグ移動のアニメーション";
+            treeNode4.Name = "ノード0";
+            treeNode4.Tag = "結合";
+            treeNode4.Text = "結合";
+            treeNode5.Name = "ノード0";
+            treeNode5.Tag = "マージ";
+            treeNode5.Text = "マージ";
+            treeNode6.Name = "ノード9";
+            treeNode6.Text = "選択範囲内で中央";
+            treeNode7.Name = "ノード0";
+            treeNode7.Tag = "チップ";
+            treeNode7.Text = "テキストチップ";
+            treeNode8.Name = "ノード0";
+            treeNode8.Tag = "ノート コメント";
+            treeNode8.Text = "セルノート";
+            treeNode9.Name = "ノード0";
+            treeNode9.Text = "コメント";
+            treeNode10.Name = "ノード3";
+            treeNode10.Text = "スレッド形式のコメント";
             treeNode11.Name = "ノード0";
-            treeNode11.Text = "マウスホイールによる水平スクロール";
-            treeNode12.Name = "ノード13";
-            treeNode12.Text = "シェイプの3D回転";
-            treeNode13.Name = "ノード12";
-            treeNode13.Text = "曲線シェイプの入力";
-            treeNode14.Name = "ノード6";
-            treeNode14.Text = "Excel互換の印刷機能";
+            treeNode11.Tag = "非表示";
+            treeNode11.Text = "行、列の非表示";
+            treeNode12.Name = "ノード0";
+            treeNode12.Tag = "リサイズ";
+            treeNode12.Text = "行、列のリサイズ";
+            treeNode13.Name = "ノード0";
+            treeNode13.Tag = "移動";
+            treeNode13.Text = "行列のドラッグ移動";
+            treeNode14.Name = "ノード0";
+            treeNode14.Text = "挿入ダイアログ";
             treeNode15.Name = "ノード0";
-            treeNode15.Text = "新機能";
+            treeNode15.Tag = "フッタ 集計";
+            treeNode15.Text = "列フッタ";
             treeNode16.Name = "ノード0";
-            treeNode16.Text = "列幅、行高の自動調整";
+            treeNode16.Tag = "ヘッダ";
+            treeNode16.Text = "ヘッダの非表示";
             treeNode17.Name = "ノード0";
-            treeNode17.Tag = "セレクタ";
-            treeNode17.Text = "行セレクタ";
+            treeNode17.Tag = "ヘッダ";
+            treeNode17.Text = "マルチヘッダ";
             treeNode18.Name = "ノード0";
-            treeNode18.Tag = "移動";
-            treeNode18.Text = "行列ドラッグ移動のアニメーション";
+            treeNode18.Tag = "コーナー";
+            treeNode18.Text = "シートコーナーの分割";
             treeNode19.Name = "ノード0";
-            treeNode19.Tag = "結合";
-            treeNode19.Text = "結合";
+            treeNode19.Tag = "タイトル サブタイトル";
+            treeNode19.Text = "タイトル、サブタイトル";
             treeNode20.Name = "ノード0";
-            treeNode20.Tag = "マージ";
-            treeNode20.Text = "マージ";
+            treeNode20.Text = "行ヘッダの自動拡張";
             treeNode21.Name = "ノード0";
-            treeNode21.Tag = "チップ";
-            treeNode21.Text = "テキストチップ";
+            treeNode21.Text = "コンテキストメニュー";
             treeNode22.Name = "ノード0";
-            treeNode22.Tag = "ノート コメント";
-            treeNode22.Text = "セルノート";
+            treeNode22.Text = "行、列、セル、ヘッダ";
             treeNode23.Name = "ノード0";
-            treeNode23.Text = "コメント";
+            treeNode23.Text = "ステータスバー";
             treeNode24.Name = "ノード0";
-            treeNode24.Tag = "非表示";
-            treeNode24.Text = "行、列の非表示";
-            treeNode25.Name = "ノード0";
-            treeNode25.Tag = "リサイズ";
-            treeNode25.Text = "行、列のリサイズ";
+            treeNode24.Text = "前後のコントロールに移動";
+            treeNode25.Name = "ノード1";
+            treeNode25.Tag = "テーブル";
+            treeNode25.Text = "テーブル";
             treeNode26.Name = "ノード0";
-            treeNode26.Tag = "移動";
-            treeNode26.Text = "行列のドラッグ移動";
-            treeNode27.Name = "ノード0";
-            treeNode27.Text = "挿入ダイアログ";
-            treeNode28.Name = "ノード0";
-            treeNode28.Tag = "フッタ 集計";
-            treeNode28.Text = "列フッタ";
+            treeNode26.Text = "スライサー";
+            treeNode27.Name = "ノード1";
+            treeNode27.Tag = "シート";
+            treeNode27.Text = "マルチシート";
+            treeNode28.Name = "ノード7";
+            treeNode28.Text = "複数シートのコピー";
             treeNode29.Name = "ノード0";
-            treeNode29.Tag = "ヘッダ";
-            treeNode29.Text = "ヘッダの非表示";
+            treeNode29.Tag = "非表示";
+            treeNode29.Text = "シートの非表示";
             treeNode30.Name = "ノード0";
-            treeNode30.Tag = "ヘッダ";
-            treeNode30.Text = "マルチヘッダ";
-            treeNode31.Name = "ノード0";
-            treeNode31.Tag = "コーナー";
-            treeNode31.Text = "シートコーナーの分割";
+            treeNode30.Tag = "グリッド 枠線";
+            treeNode30.Text = "グリッド線";
+            treeNode31.Name = "ノード1";
+            treeNode31.Tag = "ズーム";
+            treeNode31.Text = "ズーム";
             treeNode32.Name = "ノード0";
-            treeNode32.Tag = "タイトル サブタイトル";
-            treeNode32.Text = "タイトル、サブタイトル";
-            treeNode33.Name = "ノード0";
-            treeNode33.Text = "行ヘッダの自動拡張";
+            treeNode32.Tag = "キーボード マップ";
+            treeNode32.Text = "キーボードマップ";
+            treeNode33.Name = "ノード2";
+            treeNode33.Tag = "アンドゥ リドゥ";
+            treeNode33.Text = "アンドゥ・リドゥ";
             treeNode34.Name = "ノード0";
-            treeNode34.Text = "行、列、セル、ヘッダ";
+            treeNode34.Tag = "ビューポート 分割 ウィンドウ";
+            treeNode34.Text = "ビューポート";
             treeNode35.Name = "ノード0";
-            treeNode35.Text = "ステータスバー";
+            treeNode35.Tag = "トップ";
+            treeNode35.Text = "先頭セルの取得";
             treeNode36.Name = "ノード0";
-            treeNode36.Text = "前後のコントロールに移動";
-            treeNode37.Name = "ノード1";
-            treeNode37.Tag = "テーブル";
-            treeNode37.Text = "テーブル";
+            treeNode36.Text = "Excel互換のショートカットキー";
+            treeNode37.Name = "ノード0";
+            treeNode37.Text = "シート";
             treeNode38.Name = "ノード0";
-            treeNode38.Text = "スライサー";
-            treeNode39.Name = "ノード1";
-            treeNode39.Tag = "シート";
-            treeNode39.Text = "マルチシート";
+            treeNode38.Tag = "斜線 罫線";
+            treeNode38.Text = "斜め罫線";
+            treeNode39.Name = "ノード0";
+            treeNode39.Tag = "回転";
+            treeNode39.Text = "背景色の回転";
             treeNode40.Name = "ノード0";
-            treeNode40.Tag = "非表示";
-            treeNode40.Text = "シートの非表示";
+            treeNode40.Tag = "フォント";
+            treeNode40.Text = "フォント";
             treeNode41.Name = "ノード0";
-            treeNode41.Tag = "グリッド 枠線";
-            treeNode41.Text = "グリッド線";
-            treeNode42.Name = "ノード1";
-            treeNode42.Tag = "ズーム";
-            treeNode42.Text = "ズーム";
+            treeNode41.Tag = "色 スタイル";
+            treeNode41.Text = "背景色";
+            treeNode42.Name = "ノード0";
+            treeNode42.Tag = "罫線";
+            treeNode42.Text = "罫線";
             treeNode43.Name = "ノード0";
-            treeNode43.Tag = "キーボード マップ";
-            treeNode43.Text = "キーボードマップ";
-            treeNode44.Name = "ノード2";
-            treeNode44.Tag = "アンドゥ リドゥ";
-            treeNode44.Text = "アンドゥ・リドゥ";
+            treeNode43.Text = "拡張罫線";
+            treeNode44.Name = "ノード0";
+            treeNode44.Tag = "スタイル テーマ";
+            treeNode44.Text = "スキン";
             treeNode45.Name = "ノード0";
-            treeNode45.Tag = "ビューポート 分割 ウィンドウ";
-            treeNode45.Text = "ビューポート";
+            treeNode45.Tag = "書式";
+            treeNode45.Text = "条件付き書式";
             treeNode46.Name = "ノード0";
-            treeNode46.Tag = "トップ";
-            treeNode46.Text = "先頭セルの取得";
+            treeNode46.Tag = "スパークライン";
+            treeNode46.Text = "スパークライン";
             treeNode47.Name = "ノード0";
-            treeNode47.Text = "Excel互換のショートカットキー";
+            treeNode47.Text = "数式を使用したスパークライン";
             treeNode48.Name = "ノード0";
-            treeNode48.Text = "シート";
+            treeNode48.Text = "パターンとグラデーション";
             treeNode49.Name = "ノード0";
-            treeNode49.Tag = "斜線 罫線";
-            treeNode49.Text = "斜め罫線";
+            treeNode49.Text = "スタイル";
             treeNode50.Name = "ノード0";
-            treeNode50.Tag = "回転";
-            treeNode50.Text = "背景色の回転";
+            treeNode50.Text = "ヘッダクリック時の選択範囲";
             treeNode51.Name = "ノード0";
-            treeNode51.Tag = "フォント";
-            treeNode51.Text = "フォント";
+            treeNode51.Tag = "色 スタイル カレント";
+            treeNode51.Text = "アクティブセルの色";
             treeNode52.Name = "ノード0";
-            treeNode52.Tag = "色 スタイル";
-            treeNode52.Text = "背景色";
+            treeNode52.Tag = "ヘッダ ハイライト";
+            treeNode52.Text = "ヘッダのハイライト表示";
             treeNode53.Name = "ノード0";
-            treeNode53.Tag = "罫線";
-            treeNode53.Text = "罫線";
+            treeNode53.Tag = "フォーカス 選択 カレント";
+            treeNode53.Text = "フォーカス枠";
             treeNode54.Name = "ノード0";
-            treeNode54.Text = "拡張罫線";
+            treeNode54.Tag = "選択";
+            treeNode54.Text = "選択範囲の作成";
             treeNode55.Name = "ノード0";
-            treeNode55.Tag = "スタイル テーマ";
-            treeNode55.Text = "スキン";
+            treeNode55.Tag = "選択";
+            treeNode55.Text = "選択範囲の取得";
             treeNode56.Name = "ノード0";
-            treeNode56.Tag = "書式";
-            treeNode56.Text = "条件付き書式";
+            treeNode56.Tag = "選択 クリア";
+            treeNode56.Text = "選択範囲のクリア";
             treeNode57.Name = "ノード0";
-            treeNode57.Tag = "スパークライン";
-            treeNode57.Text = "スパークライン";
+            treeNode57.Tag = "選択 スタイル";
+            treeNode57.Text = "選択のスタイル";
             treeNode58.Name = "ノード0";
-            treeNode58.Text = "数式を使用したスパークライン";
+            treeNode58.Tag = "選択";
+            treeNode58.Text = "オペレーションモード";
             treeNode59.Name = "ノード0";
-            treeNode59.Text = "パターンとグラデーション";
+            treeNode59.Tag = "選択";
+            treeNode59.Text = "選択のカスタマイズ";
             treeNode60.Name = "ノード0";
-            treeNode60.Text = "スタイル";
+            treeNode60.Tag = "移動 スキップ";
+            treeNode60.Text = "セル移動のスキップ";
             treeNode61.Name = "ノード0";
-            treeNode61.Text = "ヘッダクリック時の選択範囲";
+            treeNode61.Text = "選択";
             treeNode62.Name = "ノード0";
-            treeNode62.Tag = "色 スタイル カレント";
-            treeNode62.Text = "アクティブセルの色";
-            treeNode63.Name = "ノード0";
-            treeNode63.Tag = "ヘッダ ハイライト";
-            treeNode63.Text = "ヘッダのハイライト表示";
-            treeNode64.Name = "ノード0";
-            treeNode64.Tag = "フォーカス 選択 カレント";
-            treeNode64.Text = "フォーカス枠";
-            treeNode65.Name = "ノード0";
-            treeNode65.Tag = "選択";
-            treeNode65.Text = "選択範囲の作成";
-            treeNode66.Name = "ノード0";
-            treeNode66.Tag = "選択";
-            treeNode66.Text = "選択範囲の取得";
-            treeNode67.Name = "ノード0";
-            treeNode67.Tag = "選択 クリア";
-            treeNode67.Text = "選択範囲のクリア";
-            treeNode68.Name = "ノード0";
-            treeNode68.Tag = "選択 スタイル";
-            treeNode68.Text = "選択のスタイル";
-            treeNode69.Name = "ノード0";
-            treeNode69.Tag = "選択";
-            treeNode69.Text = "オペレーションモード";
-            treeNode70.Name = "ノード0";
-            treeNode70.Tag = "選択";
-            treeNode70.Text = "選択のカスタマイズ";
-            treeNode71.Name = "ノード0";
-            treeNode71.Tag = "移動 スキップ";
-            treeNode71.Text = "セル移動のスキップ";
-            treeNode72.Name = "ノード0";
-            treeNode72.Text = "選択";
-            treeNode73.Name = "ノード0";
-            treeNode73.Tag = "チェックボックス コンボ ボタン マスク ハイパーリンク 通貨 日付 時刻 数値 パーセント 正規表現 テキスト 文字列 イメージ リストボックス マルチオプショ" +
+            treeNode62.Tag = "チェックボックス コンボ ボタン マスク ハイパーリンク 通貨 日付 時刻 数値 パーセント 正規表現 テキスト 文字列 イメージ リストボックス マルチオプショ" +
     "ン ラジオ プログレス リッチテキスト スライダー InputMan GcTextBox GcDateTime GcNumber マルチタッチ";
-            treeNode73.Text = "セル型";
+            treeNode62.Text = "セル型";
+            treeNode63.Name = "ノード0";
+            treeNode63.Text = "セルの書式設定";
+            treeNode64.Name = "ノード0";
+            treeNode64.Text = "セル型";
+            treeNode65.Name = "ノード0";
+            treeNode65.Text = "コンボボックス";
+            treeNode66.Name = "ノード0";
+            treeNode66.Text = "マスク";
+            treeNode67.Name = "ノード0";
+            treeNode67.Text = "時間間隔";
+            treeNode68.Name = "ノード0";
+            treeNode68.Text = "マス目";
+            treeNode69.Name = "ノード0";
+            treeNode69.Text = "テキスト";
+            treeNode70.Name = "ノード0";
+            treeNode70.Text = "日付";
+            treeNode71.Name = "ノード0";
+            treeNode71.Text = "数値";
+            treeNode72.Name = "ノード0";
+            treeNode72.Text = "高度な入力支援（InputManセル）";
+            treeNode73.Name = "ノード0";
+            treeNode73.Tag = "集計 非表示";
+            treeNode73.Text = "非表示の値を無視する集計";
             treeNode74.Name = "ノード0";
-            treeNode74.Text = "セルの書式設定";
+            treeNode74.Tag = "IME";
+            treeNode74.Text = "IMEモード";
             treeNode75.Name = "ノード0";
-            treeNode75.Text = "セル型";
+            treeNode75.Tag = "入力 編集";
+            treeNode75.Text = "常時入力モード";
             treeNode76.Name = "ノード0";
-            treeNode76.Text = "コンボボックス";
+            treeNode76.Tag = "上書き";
+            treeNode76.Text = "上書き入力";
             treeNode77.Name = "ノード0";
-            treeNode77.Text = "マスク";
+            treeNode77.Tag = "ロック 読み取り専用";
+            treeNode77.Text = "ロック";
             treeNode78.Name = "ノード0";
-            treeNode78.Text = "時間間隔";
+            treeNode78.Tag = "コピー ペースト 貼り付け";
+            treeNode78.Text = "クリップボード";
             treeNode79.Name = "ノード0";
-            treeNode79.Text = "マス目";
-            treeNode80.Name = "ノード0";
-            treeNode80.Text = "テキスト";
+            treeNode79.Text = "Excelライクなコピー＆ペースト";
+            treeNode80.Name = "ノード5";
+            treeNode80.Text = "複数範囲のコピー＆ペースト";
             treeNode81.Name = "ノード0";
-            treeNode81.Text = "日付";
+            treeNode81.Tag = "フィル";
+            treeNode81.Text = "オートフィル";
             treeNode82.Name = "ノード0";
-            treeNode82.Text = "数値";
+            treeNode82.Text = "オートフィルメニュー";
             treeNode83.Name = "ノード0";
-            treeNode83.Text = "高度な入力支援（InputManセル）";
+            treeNode83.Tag = "移動";
+            treeNode83.Text = "ドラッグ移動";
             treeNode84.Name = "ノード0";
-            treeNode84.Tag = "集計 非表示";
-            treeNode84.Text = "非表示の値を無視する集計";
+            treeNode84.Text = "ドラッグ＆ドロップ";
             treeNode85.Name = "ノード0";
-            treeNode85.Tag = "IME";
-            treeNode85.Text = "IMEモード";
+            treeNode85.Tag = "オーバーフロー";
+            treeNode85.Text = "オーバーフロー";
             treeNode86.Name = "ノード0";
-            treeNode86.Tag = "入力 編集";
-            treeNode86.Text = "常時入力モード";
-            treeNode87.Name = "ノード0";
-            treeNode87.Tag = "上書き";
-            treeNode87.Text = "上書き入力";
-            treeNode88.Name = "ノード0";
-            treeNode88.Tag = "ロック 読み取り専用";
-            treeNode88.Text = "ロック";
+            treeNode86.Text = "データ検証";
+            treeNode87.Name = "ノード8";
+            treeNode87.Text = "テキストから列";
+            treeNode88.Name = "ノード11";
+            treeNode88.Text = "重複データの削除";
             treeNode89.Name = "ノード0";
-            treeNode89.Tag = "コピー ペースト 貼り付け";
-            treeNode89.Text = "クリップボード";
+            treeNode89.Tag = "数式 関数";
+            treeNode89.Text = "数式";
             treeNode90.Name = "ノード0";
-            treeNode90.Text = "Excelライクなコピー＆ペースト";
+            treeNode90.Tag = "数式 関数";
+            treeNode90.Text = "別シートセルの数式参照";
             treeNode91.Name = "ノード0";
-            treeNode91.Tag = "フィル";
-            treeNode91.Text = "オートフィル";
+            treeNode91.Tag = "数式 関数";
+            treeNode91.Text = "独自の数式";
             treeNode92.Name = "ノード0";
-            treeNode92.Text = "オートフィルメニュー";
+            treeNode92.Text = "配列数式";
             treeNode93.Name = "ノード0";
-            treeNode93.Tag = "移動";
-            treeNode93.Text = "ドラッグ移動";
+            treeNode93.Text = "ヘッダ・フッタ上のデータ参照";
             treeNode94.Name = "ノード0";
-            treeNode94.Text = "ドラッグ＆ドロップ";
+            treeNode94.Tag = "数式 関数";
+            treeNode94.Text = "数式テキストボックス";
             treeNode95.Name = "ノード0";
-            treeNode95.Tag = "オーバーフロー";
-            treeNode95.Text = "オーバーフロー";
+            treeNode95.Tag = "数式 関数 ゴールシーク";
+            treeNode95.Text = "ゴールシーク";
             treeNode96.Name = "ノード0";
-            treeNode96.Text = "データ検証";
+            treeNode96.Tag = "検索";
+            treeNode96.Text = "検索";
             treeNode97.Name = "ノード0";
-            treeNode97.Tag = "数式 関数";
-            treeNode97.Text = "数式";
+            treeNode97.Text = "数式のオートフォーマット";
             treeNode98.Name = "ノード0";
-            treeNode98.Tag = "数式 関数";
-            treeNode98.Text = "別シートセルの数式参照";
+            treeNode98.Text = "動的配列数式";
             treeNode99.Name = "ノード0";
-            treeNode99.Tag = "数式 関数";
-            treeNode99.Text = "独自の数式";
+            treeNode99.Text = "数式の表示";
             treeNode100.Name = "ノード0";
-            treeNode100.Text = "配列数式";
+            treeNode100.Text = "編集";
             treeNode101.Name = "ノード0";
-            treeNode101.Text = "ヘッダ・フッタ上のデータ参照";
-            treeNode102.Name = "ノード0";
-            treeNode102.Tag = "数式 関数";
-            treeNode102.Text = "数式テキストボックス";
+            treeNode101.Tag = "ソート";
+            treeNode101.Text = "自動ソート";
+            treeNode102.Name = "ノード1";
+            treeNode102.Tag = "ソート 固定";
+            treeNode102.Text = "固定行を除いたソート";
             treeNode103.Name = "ノード0";
-            treeNode103.Tag = "数式 関数 ゴールシーク";
-            treeNode103.Text = "ゴールシーク";
+            treeNode103.Text = "セル範囲のソート";
             treeNode104.Name = "ノード0";
-            treeNode104.Tag = "検索";
-            treeNode104.Text = "検索";
+            treeNode104.Tag = "ソート";
+            treeNode104.Text = "独自のソートロジックでソート";
             treeNode105.Name = "ノード0";
-            treeNode105.Text = "数式のオートフォーマット";
+            treeNode105.Text = "ソート";
             treeNode106.Name = "ノード0";
-            treeNode106.Text = "動的配列数式";
+            treeNode106.Text = "ドロップダウンメニューからソート";
             treeNode107.Name = "ノード0";
-            treeNode107.Text = "数式の表示";
+            treeNode107.Tag = "フィルタ 絞り込み";
+            treeNode107.Text = "フィルタリングの自動実行";
             treeNode108.Name = "ノード0";
-            treeNode108.Text = "編集";
+            treeNode108.Tag = "フィルタ 絞り込み";
+            treeNode108.Text = "非表示フィルタ";
             treeNode109.Name = "ノード0";
-            treeNode109.Tag = "ソート";
-            treeNode109.Text = "自動ソート";
-            treeNode110.Name = "ノード1";
-            treeNode110.Tag = "ソート 固定";
-            treeNode110.Text = "固定行を除いたソート";
+            treeNode109.Tag = "フィルタ 絞り込み";
+            treeNode109.Text = "スタイルフィルタ";
+            treeNode110.Name = "ノード0";
+            treeNode110.Tag = "フィルタ 絞り込み";
+            treeNode110.Text = "カスタムフィルタ";
             treeNode111.Name = "ノード0";
-            treeNode111.Text = "セル範囲のソート";
+            treeNode111.Tag = "フィルタ 絞り込み";
+            treeNode111.Text = "条件フィルタ";
             treeNode112.Name = "ノード0";
-            treeNode112.Tag = "ソート";
-            treeNode112.Text = "独自のソートロジックでソート";
+            treeNode112.Tag = "フィルタ 絞り込み";
+            treeNode112.Text = "Excelフィルタリング";
             treeNode113.Name = "ノード0";
-            treeNode113.Text = "ソート";
+            treeNode113.Tag = "フィルタ 絞り込み";
+            treeNode113.Text = "非フィルタリング行";
             treeNode114.Name = "ノード0";
-            treeNode114.Text = "ドロップダウンメニューからソート";
-            treeNode115.Name = "ノード0";
-            treeNode115.Tag = "フィルタ 絞り込み";
-            treeNode115.Text = "フィルタリングの自動実行";
+            treeNode114.Text = "セル範囲のフィルタリング";
+            treeNode115.Name = "ノード1";
+            treeNode115.Text = "フィルタリング";
             treeNode116.Name = "ノード0";
-            treeNode116.Tag = "フィルタ 絞り込み";
-            treeNode116.Text = "非表示フィルタ";
+            treeNode116.Tag = "アウトライン グループ化";
+            treeNode116.Text = "アウトラインのボタン位置";
             treeNode117.Name = "ノード0";
-            treeNode117.Tag = "フィルタ 絞り込み";
-            treeNode117.Text = "スタイルフィルタ";
+            treeNode117.Tag = "グルーピング グループ";
+            treeNode117.Text = "Outlookスタイルグループ化";
             treeNode118.Name = "ノード0";
-            treeNode118.Tag = "フィルタ 絞り込み";
-            treeNode118.Text = "カスタムフィルタ";
+            treeNode118.Tag = "アウトライン グループ化";
+            treeNode118.Text = "アウトライン";
             treeNode119.Name = "ノード0";
-            treeNode119.Tag = "フィルタ 絞り込み";
-            treeNode119.Text = "条件フィルタ";
+            treeNode119.Text = "グループ化";
             treeNode120.Name = "ノード0";
-            treeNode120.Tag = "フィルタ 絞り込み";
-            treeNode120.Text = "Excelフィルタリング";
+            treeNode120.Text = "テキスト位置の自動調整";
             treeNode121.Name = "ノード0";
-            treeNode121.Tag = "フィルタ 絞り込み";
-            treeNode121.Text = "非フィルタリング行";
+            treeNode121.Tag = "スクロール ピクセル";
+            treeNode121.Text = "スクロール単位";
             treeNode122.Name = "ノード0";
-            treeNode122.Text = "セル範囲のフィルタリング";
-            treeNode123.Name = "ノード1";
-            treeNode123.Text = "フィルタリング";
+            treeNode122.Text = "マウスホイールのピクセルスクロール";
+            treeNode123.Name = "ノード0";
+            treeNode123.Text = "マウスホイールによる水平スクロール";
             treeNode124.Name = "ノード0";
-            treeNode124.Tag = "アウトライン グループ化";
-            treeNode124.Text = "アウトラインのボタン位置";
+            treeNode124.Tag = "スクロール 非表示";
+            treeNode124.Text = "スクロールバーの表示・非表示";
             treeNode125.Name = "ノード0";
-            treeNode125.Tag = "グルーピング グループ";
-            treeNode125.Text = "Outlookスタイルグループ化";
+            treeNode125.Tag = "スクロール";
+            treeNode125.Text = "遅延スクロール";
             treeNode126.Name = "ノード0";
-            treeNode126.Tag = "アウトライン グループ化";
-            treeNode126.Text = "アウトライン";
+            treeNode126.Tag = "スクロール 固定 ウィンドウ";
+            treeNode126.Text = "行・列の固定";
             treeNode127.Name = "ノード0";
-            treeNode127.Text = "グループ化";
-            treeNode128.Name = "ノード0";
-            treeNode128.Text = "テキスト位置の自動調整";
+            treeNode127.Text = "固定線の色";
+            treeNode128.Name = "ノード10";
+            treeNode128.Text = "固定線の太さ";
             treeNode129.Name = "ノード0";
-            treeNode129.Tag = "スクロール ピクセル";
-            treeNode129.Text = "スクロール単位";
+            treeNode129.Text = "スクロール";
             treeNode130.Name = "ノード0";
-            treeNode130.Text = "マウスホイールのピクセルスクロール";
+            treeNode130.Text = "バウンドデータ";
             treeNode131.Name = "ノード0";
-            treeNode131.Tag = "スクロール 非表示";
-            treeNode131.Text = "スクロールバーの表示・非表示";
+            treeNode131.Text = "アンバウンドデータ";
             treeNode132.Name = "ノード0";
-            treeNode132.Tag = "スクロール";
-            treeNode132.Text = "遅延スクロール";
-            treeNode133.Name = "ノード0";
-            treeNode133.Tag = "スクロール 固定 ウィンドウ";
-            treeNode133.Text = "行・列の固定";
+            treeNode132.Text = "特定の列だけを連結";
+            treeNode133.Name = "ノード1";
+            treeNode133.Text = "テーブルへのデータバインディング";
             treeNode134.Name = "ノード0";
-            treeNode134.Text = "固定線の色";
+            treeNode134.Text = "テーブルの自動拡張";
             treeNode135.Name = "ノード0";
-            treeNode135.Text = "スクロール";
+            treeNode135.Text = "テーブルフィルタの自動更新";
             treeNode136.Name = "ノード0";
-            treeNode136.Text = "バウンドデータ";
+            treeNode136.Text = "行の追加";
             treeNode137.Name = "ノード0";
-            treeNode137.Text = "アンバウンドデータ";
+            treeNode137.Text = "行の削除";
             treeNode138.Name = "ノード0";
-            treeNode138.Text = "特定の列だけを連結";
-            treeNode139.Name = "ノード1";
-            treeNode139.Text = "テーブルへのデータバインディング";
+            treeNode138.Text = "新規行";
+            treeNode139.Name = "ノード0";
+            treeNode139.Text = "階層表示";
             treeNode140.Name = "ノード0";
-            treeNode140.Text = "テーブルの自動拡張";
+            treeNode140.Text = "データ連結";
             treeNode141.Name = "ノード0";
-            treeNode141.Text = "行の追加";
+            treeNode141.Text = "チャートコントロール";
             treeNode142.Name = "ノード0";
-            treeNode142.Text = "行の削除";
+            treeNode142.Text = "ツリーマップ";
             treeNode143.Name = "ノード0";
-            treeNode143.Text = "新規行";
+            treeNode143.Text = "サンバースト";
             treeNode144.Name = "ノード0";
-            treeNode144.Text = "階層表示";
+            treeNode144.Text = "ヒストグラム";
             treeNode145.Name = "ノード0";
-            treeNode145.Text = "データ連結";
+            treeNode145.Text = "パレート図";
             treeNode146.Name = "ノード0";
-            treeNode146.Text = "チャートコントロール";
+            treeNode146.Text = "箱ひげ図";
             treeNode147.Name = "ノード0";
-            treeNode147.Text = "ツリーマップ";
+            treeNode147.Text = "ウォーターフォール";
             treeNode148.Name = "ノード0";
-            treeNode148.Text = "サンバースト";
+            treeNode148.Text = "じょうご";
             treeNode149.Name = "ノード0";
-            treeNode149.Text = "ヒストグラム";
+            treeNode149.Tag = "チャート グラフ";
+            treeNode149.Text = "折れ線チャートの線種";
             treeNode150.Name = "ノード0";
-            treeNode150.Text = "パレート図";
+            treeNode150.Tag = "チャート グラフ";
+            treeNode150.Text = "縦棒";
             treeNode151.Name = "ノード0";
-            treeNode151.Text = "箱ひげ図";
+            treeNode151.Tag = "チャート グラフ";
+            treeNode151.Text = "折れ線";
             treeNode152.Name = "ノード0";
-            treeNode152.Text = "ウォーターフォール";
+            treeNode152.Tag = "チャート グラフ";
+            treeNode152.Text = "円";
             treeNode153.Name = "ノード0";
-            treeNode153.Text = "じょうご";
+            treeNode153.Tag = "チャート グラフ";
+            treeNode153.Text = "横棒";
             treeNode154.Name = "ノード0";
             treeNode154.Tag = "チャート グラフ";
-            treeNode154.Text = "折れ線チャートの線種";
+            treeNode154.Text = "面";
             treeNode155.Name = "ノード0";
             treeNode155.Tag = "チャート グラフ";
-            treeNode155.Text = "縦棒";
+            treeNode155.Text = "散布図";
             treeNode156.Name = "ノード0";
             treeNode156.Tag = "チャート グラフ";
-            treeNode156.Text = "折れ線";
+            treeNode156.Text = "バブル";
             treeNode157.Name = "ノード0";
             treeNode157.Tag = "チャート グラフ";
-            treeNode157.Text = "円";
+            treeNode157.Text = "株価";
             treeNode158.Name = "ノード0";
             treeNode158.Tag = "チャート グラフ";
-            treeNode158.Text = "横棒";
+            treeNode158.Text = "XYZ散布図";
             treeNode159.Name = "ノード0";
             treeNode159.Tag = "チャート グラフ";
-            treeNode159.Text = "面";
+            treeNode159.Text = "ドーナツ";
             treeNode160.Name = "ノード0";
             treeNode160.Tag = "チャート グラフ";
-            treeNode160.Text = "散布図";
+            treeNode160.Text = "レーダー";
             treeNode161.Name = "ノード0";
             treeNode161.Tag = "チャート グラフ";
-            treeNode161.Text = "バブル";
+            treeNode161.Text = "ポーラ";
             treeNode162.Name = "ノード0";
-            treeNode162.Tag = "チャート グラフ";
-            treeNode162.Text = "株価";
-            treeNode163.Name = "ノード0";
-            treeNode163.Tag = "チャート グラフ";
-            treeNode163.Text = "XYZ散布図";
-            treeNode164.Name = "ノード0";
-            treeNode164.Tag = "チャート グラフ";
-            treeNode164.Text = "ドーナツ";
+            treeNode162.Text = "チャートシート";
+            treeNode163.Name = "ノード1";
+            treeNode163.Text = "チャートへシェイプの埋め込み";
+            treeNode164.Name = "ノード2";
+            treeNode164.Text = "チャートの複数項目軸ラベル";
             treeNode165.Name = "ノード0";
-            treeNode165.Tag = "チャート グラフ";
-            treeNode165.Text = "レーダー";
+            treeNode165.Text = "チャートの誤差範囲";
             treeNode166.Name = "ノード0";
-            treeNode166.Tag = "チャート グラフ";
-            treeNode166.Text = "ポーラ";
+            treeNode166.Text = "チャート";
             treeNode167.Name = "ノード0";
-            treeNode167.Text = "チャート";
+            treeNode167.Text = "白黒印刷";
             treeNode168.Name = "ノード0";
-            treeNode168.Text = "白黒印刷";
+            treeNode168.Text = "印刷";
             treeNode169.Name = "ノード0";
-            treeNode169.Text = "印刷";
+            treeNode169.Text = "両面印刷";
             treeNode170.Name = "ノード0";
-            treeNode170.Text = "両面印刷";
+            treeNode170.Text = "印刷プレビュー";
             treeNode171.Name = "ノード0";
-            treeNode171.Text = "印刷プレビュー";
+            treeNode171.Text = "Excelライクプレビュー";
             treeNode172.Name = "ノード0";
-            treeNode172.Text = "Excelライクプレビュー";
+            treeNode172.Text = "印刷ページ設定";
             treeNode173.Name = "ノード0";
-            treeNode173.Text = "印刷ページ設定";
-            treeNode174.Name = "ノード0";
-            treeNode174.Text = "ユーザー定義印刷";
+            treeNode173.Text = "ユーザー定義印刷";
+            treeNode174.Name = "ノード6";
+            treeNode174.Text = "Excel互換の印刷機能";
             treeNode175.Name = "ノード0";
             treeNode175.Text = "印刷";
             treeNode176.Name = "ノード0";
             treeNode176.Tag = "PDF 印刷";
             treeNode176.Text = "PDFエクスポート";
             treeNode177.Name = "ノード0";
-            treeNode177.Tag = "csv";
-            treeNode177.Text = "csv（テキスト）ファイルの読込";
+            treeNode177.Text = "新しいPDFエクスポート";
             treeNode178.Name = "ノード0";
             treeNode178.Tag = "csv";
-            treeNode178.Text = "csv（テキスト）ファイルへ保存";
+            treeNode178.Text = "csv（テキスト）ファイルの読込";
             treeNode179.Name = "ノード0";
-            treeNode179.Tag = "Excel xls xlsx";
-            treeNode179.Text = "Excelファイルの読込";
+            treeNode179.Tag = "csv";
+            treeNode179.Text = "csv（テキスト）ファイルへ保存";
             treeNode180.Name = "ノード0";
             treeNode180.Tag = "Excel xls xlsx";
-            treeNode180.Text = "Excelファイルへ保存";
+            treeNode180.Text = "Excelファイルの読込";
             treeNode181.Name = "ノード0";
-            treeNode181.Text = "Excelファイルの読込と保存（Excel情報の維持）";
-            treeNode182.Name = "ノード2";
-            treeNode182.Text = "インポート／エクスポート";
+            treeNode181.Tag = "Excel xls xlsx";
+            treeNode181.Text = "Excelファイルへ保存";
+            treeNode182.Name = "ノード0";
+            treeNode182.Text = "Excelファイルの読込と保存（Excel情報の維持）";
             treeNode183.Name = "ノード0";
-            treeNode183.Tag = "タッチ メニュー マルチタッチ";
-            treeNode183.Text = "タッチツールバー";
-            treeNode184.Name = "ノード0";
-            treeNode184.Tag = "タッチ 選択 マルチタッチ";
-            treeNode184.Text = "選択グリッパー";
+            treeNode183.Text = "XMLデータファイルの読込";
+            treeNode184.Name = "ノード2";
+            treeNode184.Text = "インポート／エクスポート";
             treeNode185.Name = "ノード0";
-            treeNode185.Tag = "タッチ スクロール マルチタッチ";
-            treeNode185.Text = "タッチスクロール";
+            treeNode185.Tag = "タッチ メニュー マルチタッチ";
+            treeNode185.Text = "タッチツールバー";
             treeNode186.Name = "ノード0";
-            treeNode186.Tag = "タッチ コンボ マルチタッチ";
-            treeNode186.Text = "ドロップダウンリストの拡大表示";
+            treeNode186.Tag = "タッチ 選択 マルチタッチ";
+            treeNode186.Text = "選択グリッパー";
             treeNode187.Name = "ノード0";
-            treeNode187.Tag = "タッチ 入力 マルチタッチ";
-            treeNode187.Text = "タッチキーボード";
+            treeNode187.Tag = "タッチ スクロール マルチタッチ";
+            treeNode187.Text = "タッチスクロール";
             treeNode188.Name = "ノード0";
-            treeNode188.Text = "マルチタッチ機能";
+            treeNode188.Tag = "タッチ コンボ マルチタッチ";
+            treeNode188.Text = "ドロップダウンリストの拡大表示";
             treeNode189.Name = "ノード0";
-            treeNode189.Tag = "シェイプ";
-            treeNode189.Text = "シェイプ";
+            treeNode189.Tag = "タッチ 入力 マルチタッチ";
+            treeNode189.Text = "タッチキーボード";
             treeNode190.Name = "ノード0";
-            treeNode190.Tag = "シェイプ カメラ";
-            treeNode190.Text = "カメラシェイプ";
+            treeNode190.Text = "マルチタッチ機能";
             treeNode191.Name = "ノード0";
-            treeNode191.Text = "拡張シェイプエンジン";
+            treeNode191.Tag = "シェイプ";
+            treeNode191.Text = "シェイプ";
             treeNode192.Name = "ノード0";
-            treeNode192.Text = "拡張カメラシェイプ";
+            treeNode192.Tag = "シェイプ カメラ";
+            treeNode192.Text = "カメラシェイプ";
             treeNode193.Name = "ノード0";
-            treeNode193.Text = "シェイプの頂点の編集";
+            treeNode193.Text = "拡張シェイプエンジン";
             treeNode194.Name = "ノード0";
-            treeNode194.Text = "フリーフォーム";
-            treeNode195.Name = "ノード0";
-            treeNode195.Text = "シェイプオブジェクト";
-            treeNode196.Name = "ノード1";
-            treeNode196.Text = "売上管理";
-            treeNode197.Name = "ノード0";
-            treeNode197.Text = "サンプル";
+            treeNode194.Text = "拡張カメラシェイプ";
+            treeNode195.Name = "ノード13";
+            treeNode195.Text = "シェイプの3D回転";
+            treeNode196.Name = "ノード0";
+            treeNode196.Text = "シェイプの頂点の編集";
+            treeNode197.Name = "ノード12";
+            treeNode197.Text = "曲線シェイプの入力";
+            treeNode198.Name = "ノード0";
+            treeNode198.Text = "フリーフォーム";
+            treeNode199.Name = "ノード0";
+            treeNode199.Text = "シェイプオブジェクト";
+            treeNode200.Name = "ノード1";
+            treeNode200.Text = "売上管理";
+            treeNode201.Name = "ノード0";
+            treeNode201.Text = "サンプル";
             this.treemenu.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode15,
-            treeNode34,
-            treeNode48,
-            treeNode60,
+            treeNode22,
+            treeNode37,
+            treeNode49,
+            treeNode61,
+            treeNode64,
             treeNode72,
-            treeNode75,
-            treeNode83,
-            treeNode108,
-            treeNode113,
-            treeNode123,
-            treeNode127,
-            treeNode135,
-            treeNode145,
-            treeNode167,
+            treeNode100,
+            treeNode105,
+            treeNode115,
+            treeNode119,
+            treeNode129,
+            treeNode140,
+            treeNode166,
             treeNode175,
-            treeNode182,
-            treeNode188,
-            treeNode195,
-            treeNode197});
+            treeNode184,
+            treeNode190,
+            treeNode199,
+            treeNode201});
             this.treemenu.Size = new System.Drawing.Size(225, 433);
             this.treemenu.TabIndex = 1;
             // 
@@ -1189,7 +1205,7 @@
             this.searchlist.ItemHeight = 18;
             this.searchlist.Location = new System.Drawing.Point(9, 38);
             this.searchlist.Name = "searchlist";
-            this.searchlist.Size = new System.Drawing.Size(216, 252);
+            this.searchlist.Size = new System.Drawing.Size(216, 216);
             this.searchlist.TabIndex = 5;
             // 
             // searchtext
@@ -1215,7 +1231,7 @@
             this.copyright.AutoSize = true;
             this.copyright.Font = new System.Drawing.Font("メイリオ", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.copyright.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.copyright.Location = new System.Drawing.Point(173, -211);
+            this.copyright.Location = new System.Drawing.Point(173, -261);
             this.copyright.Name = "copyright";
             this.copyright.Size = new System.Drawing.Size(215, 17);
             this.copyright.TabIndex = 0;
@@ -1226,7 +1242,7 @@
             this.mescius_logo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.mescius_logo.BackgroundImage = global::SpreadWinDemo.Properties.Resources.MESCIUS_logo;
             this.mescius_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.mescius_logo.Location = new System.Drawing.Point(12, -219);
+            this.mescius_logo.Location = new System.Drawing.Point(12, -269);
             this.mescius_logo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mescius_logo.Name = "mescius_logo";
             this.mescius_logo.Size = new System.Drawing.Size(155, 29);

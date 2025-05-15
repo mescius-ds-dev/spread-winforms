@@ -51,53 +51,6 @@ namespace SpreadWinDemo
 
             switch (e.Node.Parent.Text)
             {
-                case "新機能":
-                    switch (e.Node.Text)
-                    {
-                        case "チャートシート":
-                            this.setMainPanel(new SpreadWinDemo.chart.chartsheet());
-                            break;
-                        case "チャートへシェイプの埋め込み":
-                            this.setMainPanel(new SpreadWinDemo.chart.embeddedshape());
-                            break;
-                        case "チャートの複数項目軸ラベル":
-                            this.setMainPanel(new SpreadWinDemo.chart.multilabels());
-                            break;
-                        case "複数範囲のコピー＆ペースト":
-                            this.setMainPanel(new SpreadWinDemo.edit.multirange());
-                            break;
-                        case "スレッド形式のコメント":
-                            this.setMainPanel(new SpreadWinDemo.rowcolcell.addthreadedcomment());
-                            break;
-                        case "複数シートのコピー":
-                            this.setMainPanel(new SpreadWinDemo.sheet.copysheets());
-                            break;
-                        case "固定線の太さ":
-                            this.setMainPanel(new SpreadWinDemo.scroll.frozenwidth());
-                            break;
-                        case "選択範囲内で中央":
-                            this.setMainPanel(new SpreadWinDemo.rowcolcell.centeracrossselection());
-                            break;
-                        case "テキストから列":
-                            this.setMainPanel(new SpreadWinDemo.edit.texttocolumns());
-                            break;
-                        case "重複データの削除":
-                            this.setMainPanel(new SpreadWinDemo.edit.removeduplicates());
-                            break;
-                        case "マウスホイールによる水平スクロール":
-                            this.setMainPanel(new SpreadWinDemo.scroll.horizontalmousewheel());
-                            break;
-                        case "シェイプの3D回転":
-                            this.setMainPanel(new SpreadWinDemo.shape.add3dshape());
-                            break;
-                        case "曲線シェイプの入力":
-                            this.setMainPanel(new SpreadWinDemo.shape.inputcurve());
-                            break;
-                        case "Excel互換の印刷機能":
-                            this.setMainPanel(new SpreadWinDemo.print.excelprint());
-                            break;
-                    }
-                    break;
                 case "行、列、セル、ヘッダ":
                     switch (e.Node.Text)
                     {
@@ -116,6 +69,9 @@ namespace SpreadWinDemo
                         case "マージ":
                             this.setMainPanel(new SpreadWinDemo.rowcolcell.rowcolmerge());
                             break;
+                        case "選択範囲内で中央":
+                            this.setMainPanel(new SpreadWinDemo.rowcolcell.centeracrossselection());
+                            break;
                         case "テキストチップ":
                             this.setMainPanel(new SpreadWinDemo.rowcolcell.texttip());
                             break;
@@ -124,6 +80,9 @@ namespace SpreadWinDemo
                             break;
                         case "コメント":
                             this.setMainPanel(new SpreadWinDemo.rowcolcell.addcomment());
+                            break;
+                        case "スレッド形式のコメント":
+                            this.setMainPanel(new SpreadWinDemo.rowcolcell.addthreadedcomment());
                             break;
                         case "行、列の非表示":
                             this.setMainPanel(new SpreadWinDemo.rowcolcell.rowvisible());
@@ -155,6 +114,9 @@ namespace SpreadWinDemo
                         case "行ヘッダの自動拡張":
                             this.setMainPanel(new SpreadWinDemo.rowcolcell.rowheaderautowidth());
                             break;
+                        case "コンテキストメニュー":
+                            this.setMainPanel(new SpreadWinDemo.rowcolcell.contextmenu());
+                            break;
                     }
                     break;
                 case "シート":
@@ -174,6 +136,9 @@ namespace SpreadWinDemo
                             break;
                         case "マルチシート":
                             this.setMainPanel(new SpreadWinDemo.sheet.multisheet());
+                            break;
+                        case "複数シートのコピー":
+                            this.setMainPanel(new SpreadWinDemo.sheet.copysheets());
                             break;
                         case "シートの非表示":
                             this.setMainPanel(new SpreadWinDemo.sheet.sheetvisible());
@@ -338,7 +303,10 @@ namespace SpreadWinDemo
                         case "Excelライクなコピー＆ペースト":
                             this.setMainPanel(new SpreadWinDemo.edit.richclipboard());
                             break;
-                         case "オートフィル":
+                        case "複数範囲のコピー＆ペースト":
+                            this.setMainPanel(new SpreadWinDemo.edit.multirange());
+                            break;
+                        case "オートフィル":
                             this.setMainPanel(new SpreadWinDemo.edit.dragfill());
                             break;
                         case "オートフィルメニュー":
@@ -355,6 +323,12 @@ namespace SpreadWinDemo
                             break;
                         case "データ検証":
                             this.setMainPanel(new SpreadWinDemo.edit.datavalidator());
+                            break;
+                        case "テキストから列":
+                            this.setMainPanel(new SpreadWinDemo.edit.texttocolumns());
+                            break;
+                        case "重複データの削除":
+                            this.setMainPanel(new SpreadWinDemo.edit.removeduplicates());
                             break;
                         case "数式":
                             this.setMainPanel(new SpreadWinDemo.edit.formula());
@@ -466,6 +440,9 @@ namespace SpreadWinDemo
                         case "マウスホイールのピクセルスクロール":
                             this.setMainPanel(new SpreadWinDemo.scroll.mousewheel());
                             break;
+                        case "マウスホイールによる水平スクロール":
+                            this.setMainPanel(new SpreadWinDemo.scroll.horizontalmousewheel());
+                            break;
                         case "スクロールバーの表示・非表示":
                             this.setMainPanel(new SpreadWinDemo.scroll.scrollbarvisible());
                             break;
@@ -477,6 +454,9 @@ namespace SpreadWinDemo
                             break;
                         case "固定線の色":
                             this.setMainPanel(new SpreadWinDemo.scroll.frozenline());
+                            break;
+                        case "固定線の太さ":
+                            this.setMainPanel(new SpreadWinDemo.scroll.frozenwidth());
                             break;
                     }
                     break;
@@ -497,6 +477,9 @@ namespace SpreadWinDemo
                             break;
                         case "テーブルの自動拡張":
                             this.setMainPanel(new SpreadWinDemo.sheet.autotable());
+                            break;
+                        case "テーブルフィルタの自動更新":
+                            this.setMainPanel(new SpreadWinDemo.databind.tableautoupdate());
                             break;
                         case "行の追加":
                             this.setMainPanel(new SpreadWinDemo.databind.addrows());
@@ -578,6 +561,18 @@ namespace SpreadWinDemo
                         case "ポーラ":
                             this.setMainPanel(new SpreadWinDemo.chart.polarchart());
                             break;
+                        case "チャートシート":
+                            this.setMainPanel(new SpreadWinDemo.chart.chartsheet());
+                            break;
+                        case "チャートへシェイプの埋め込み":
+                            this.setMainPanel(new SpreadWinDemo.chart.embeddedshape());
+                            break;
+                        case "チャートの複数項目軸ラベル":
+                            this.setMainPanel(new SpreadWinDemo.chart.multilabels());
+                            break;
+                        case "チャートの誤差範囲":
+                            this.setMainPanel(new SpreadWinDemo.chart.errorbar());
+                            break;
                     }
                     break;
                 case "印刷":
@@ -604,6 +599,9 @@ namespace SpreadWinDemo
                         case "ユーザー定義印刷":
                             this.setMainPanel(new SpreadWinDemo.print.ownerprint());
                             break;
+                        case "Excel互換の印刷機能":
+                            this.setMainPanel(new SpreadWinDemo.print.excelprint());
+                            break;
                     }
                     break;
                 case "インポート／エクスポート":
@@ -611,6 +609,9 @@ namespace SpreadWinDemo
                     {
                         case "PDFエクスポート":
                             this.setMainPanel(new SpreadWinDemo.importexport.printpdf());
+                            break;
+                        case "新しいPDFエクスポート":
+                            this.setMainPanel(new SpreadWinDemo.importexport.pdfexport());
                             break;
                         case "csv（テキスト）ファイルの読込":
                             this.setMainPanel(new SpreadWinDemo.importexport.opentextfile());
@@ -626,6 +627,9 @@ namespace SpreadWinDemo
                             break;
                         case "Excelファイルの読込と保存（Excel情報の維持）":
                             this.setMainPanel(new SpreadWinDemo.importexport.keepexcelsetting());
+                            break;
+                        case "XMLデータファイルの読込":
+                            this.setMainPanel(new SpreadWinDemo.importexport.opendataxml());
                             break;
                     }
                     break;
@@ -664,8 +668,14 @@ namespace SpreadWinDemo
                         case "拡張カメラシェイプ":
                             this.setMainPanel(new SpreadWinDemo.shape.enhancedcamerashape());
                             break;
+                        case "シェイプの3D回転":
+                            this.setMainPanel(new SpreadWinDemo.shape.add3dshape());
+                            break;
                         case "シェイプの頂点の編集":
                             this.setMainPanel(new SpreadWinDemo.shape.editshape());
+                            break;
+                        case "曲線シェイプの入力":
+                            this.setMainPanel(new SpreadWinDemo.shape.inputcurve());
                             break;
                         case "フリーフォーム":
                             this.setMainPanel(new SpreadWinDemo.shape.freeform());

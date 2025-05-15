@@ -87,18 +87,18 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FarPoint.CalcEngine, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="FarPoint.Excel, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="FarPoint.PDF, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="FarPoint.Win, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="FarPoint.Win.Chart, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="FarPoint.Win.SpreadJ, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
-    <Reference Include="GrapeCity.CalcEngine, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="GrapeCity.Spreadsheet, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="GrapeCity.Spreadsheet.DataVisualization, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
-    <Reference Include="GrapeCity.Spreadsheet.Win, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
-    <Reference Include="GrapeCity.Win.PluginInputMan, Version=17.0.4802.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.CalcEngine, Version=17.0.4803.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Excel, Version=17.0.4803.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.PDF, Version=17.0.4803.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=17.0.4803.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Win, Version=17.0.4803.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Win.Chart, Version=17.0.4803.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="FarPoint.Win.SpreadJ, Version=17.0.4803.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.CalcEngine, Version=17.0.4803.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="GrapeCity.Spreadsheet, Version=17.0.4803.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="GrapeCity.Spreadsheet.DataVisualization, Version=17.0.4803.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Spreadsheet.Win, Version=17.0.4803.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7" />
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=17.0.4803.2022, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
@@ -167,6 +167,12 @@
     </Compile>
     <Compile Include="chart\embeddedshape.Designer.cs">
       <DependentUpon>embeddedshape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart\errorbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chart\errorbar.Designer.cs">
+      <DependentUpon>errorbar.cs</DependentUpon>
     </Compile>
     <Compile Include="chart\funnel.cs">
       <SubType>UserControl</SubType>
@@ -299,6 +305,12 @@
     </Compile>
     <Compile Include="databind\removerows.Designer.cs">
       <DependentUpon>removerows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="databind\tableautoupdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="databind\tableautoupdate.Designer.cs">
+      <DependentUpon>tableautoupdate.cs</DependentUpon>
     </Compile>
     <Compile Include="databind\tablebinding.cs">
       <SubType>UserControl</SubType>
@@ -558,6 +570,12 @@
     <Compile Include="group\outlinesummary.Designer.cs">
       <DependentUpon>outlinesummary.cs</DependentUpon>
     </Compile>
+    <Compile Include="importexport\opendataxml.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="importexport\opendataxml.Designer.cs">
+      <DependentUpon>opendataxml.cs</DependentUpon>
+    </Compile>
     <Compile Include="importexport\openexcelfile.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -569,6 +587,12 @@
     </Compile>
     <Compile Include="importexport\opentextfile.Designer.cs">
       <DependentUpon>opentextfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="importexport\pdfexport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="importexport\pdfexport.Designer.cs">
+      <DependentUpon>pdfexport.cs</DependentUpon>
     </Compile>
     <Compile Include="importexport\printpdf.cs">
       <SubType>UserControl</SubType>
@@ -738,6 +762,12 @@
     </Compile>
     <Compile Include="rowcolcell\columnfooter.Designer.cs">
       <DependentUpon>columnfooter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rowcolcell\contextmenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rowcolcell\contextmenu.Designer.cs">
+      <DependentUpon>contextmenu.cs</DependentUpon>
     </Compile>
     <Compile Include="rowcolcell\dragbandonmoving.cs">
       <SubType>UserControl</SubType>
@@ -1243,6 +1273,9 @@
     <EmbeddedResource Include="chart\embeddedshape.resx">
       <DependentUpon>embeddedshape.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="chart\errorbar.resx">
+      <DependentUpon>errorbar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="chart\funnel.resx">
       <DependentUpon>funnel.cs</DependentUpon>
     </EmbeddedResource>
@@ -1308,6 +1341,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="databind\removerows.resx">
       <DependentUpon>removerows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databind\tableautoupdate.resx">
+      <DependentUpon>tableautoupdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="databind\tablebinding.resx">
       <DependentUpon>tablebinding.cs</DependentUpon>
@@ -1439,11 +1475,17 @@
     <EmbeddedResource Include="group\outlinesummary.resx">
       <DependentUpon>outlinesummary.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="importexport\opendataxml.resx">
+      <DependentUpon>opendataxml.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="importexport\openexcelfile.resx">
       <DependentUpon>openexcelfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="importexport\opentextfile.resx">
       <DependentUpon>opentextfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="importexport\pdfexport.resx">
+      <DependentUpon>pdfexport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="importexport\printpdf.resx">
       <DependentUpon>printpdf.cs</DependentUpon>
@@ -1533,6 +1575,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="rowcolcell\columnfooter.resx">
       <DependentUpon>columnfooter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rowcolcell\contextmenu.resx">
+      <DependentUpon>contextmenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rowcolcell\dragbandonmoving.resx">
       <DependentUpon>dragbandonmoving.cs</DependentUpon>
@@ -1886,6 +1931,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="product.ico" />
+    <EmbeddedResource Include="SampleData\DataFormat.xml" />
     <None Include="Resources\MESCIUS_Logo.png" />
     <None Include="Resources\logo.bmp" />
   </ItemGroup>
